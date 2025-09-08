@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - GreenLeafTech</title>
+    <link rel="stylesheet" href="greenLeafTech_style.css">
+    <style>
+        .thankyou-container {
+            max-width: 500px;
+            margin: 5vh auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(26,127,79,0.09);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+        .thankyou-container h1 {
+            color: #1a7f4f;
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+        }
+        .thankyou-container p {
+            color: #444;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+        @media (max-width: 600px) {
+            .thankyou-container {
+                padding: 1.2rem 0.5rem;
+            }
+            .thankyou-container h1 {
+                font-size: 1.5rem;
+            }
+            .thankyou-container p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">GreenLeafTech</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="thankyou-container">
+            <h1>Thank You for Downloading!</h1>
+            <p>Your download will start in a few seconds.<br>
+            We appreciate your interest in our app.</p>
+            <p>If your download doesn't start automatically, <a id="manualDownload" href="#">click here</a>.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 GreenLeafTech. All rights reserved.&nbsp;|&nbsp; <a href="privacy-policy.html" class="footer-link">Privacy Policy</a></p>
+    </footer>
+    <script>
+        // Get download URL from query string
+        function getDownloadUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('file');
+        }
+        const downloadUrl = getDownloadUrl();
+        if (downloadUrl) {
+            setTimeout(function() {
+                window.location.href = downloadUrl;
+            }, 2000);
+            document.getElementById('manualDownload').href = downloadUrl;
+        } else {
+            document.getElementById('manualDownload').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
