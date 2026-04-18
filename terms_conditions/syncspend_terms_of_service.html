@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Terms of Service — SyncSpend by GreenLeafTech</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:      #1B7A4A;
+  --green-dark: #145c38;
+  --green-light:#e8f5ee;
+  --green-mid:  #2d9e62;
+  --ink:        #1a1a1a;
+  --ink-soft:   #3d3d3d;
+  --muted:      #6b6b6b;
+  --rule:       #d4d4d4;
+  --bg:         #fafaf8;
+  --card:       #ffffff;
+  --warn-bg:    #fff8f0;
+  --warn-border:#c0392b;
+  --note-bg:    #f0f7f4;
+  --radius:     6px;
+  --shadow:     0 2px 12px rgba(0,0,0,0.07);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+/* ── Layout ── */
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--rule);
+  position: sticky; top: 0; z-index: 100;
+  padding: 0 2rem;
+}
+.site-header-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-name { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--green); font-size: 1.15rem; }
+.brand-dot { color: var(--rule); font-size: 0.8rem; }
+.brand-doc { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+.header-date { font-size: 0.78rem; color: var(--muted); }
+
+.layout {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 260px 1fr;
+  gap: 3rem; padding: 3rem 2rem;
+}
+
+/* ── Sidebar TOC ── */
+.toc-sidebar {
+  position: sticky; top: 80px; align-self: start;
+  max-height: calc(100vh - 100px); overflow-y: auto;
+}
+.toc-sidebar::-webkit-scrollbar { width: 4px; }
+.toc-sidebar::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 2px; }
+
+.toc-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 1rem;
+  padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule);
+}
+.toc-list { list-style: none; }
+.toc-list li { margin: 0; }
+.toc-list a {
+  display: block; padding: 0.35rem 0.75rem;
+  font-size: 0.8rem; color: var(--ink-soft);
+  text-decoration: none; border-left: 2px solid transparent;
+  transition: all 0.2s; line-height: 1.4;
+  font-family: 'Source Serif 4', serif;
+}
+.toc-list a:hover, .toc-list a.active {
+  color: var(--green);
+  border-left-color: var(--green);
+  background: var(--green-light);
+}
+
+/* ── Cover Hero ── */
+.doc-hero {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, var(--green-mid) 100%);
+  border-radius: 12px; padding: 3rem 3.5rem;
+  margin-bottom: 3rem; color: white; position: relative; overflow: hidden;
+}
+.doc-hero::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.doc-hero::after {
+  content: '';
+  position: absolute; bottom: -60px; left: 60px;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+.hero-company {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.85rem; letter-spacing: 0.15em;
+  text-transform: uppercase; opacity: 0.75; margin-bottom: 0.5rem;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem; font-weight: 700;
+  line-height: 1.2; margin-bottom: 1.5rem;
+}
+.hero-meta {
+  display: flex; gap: 2rem; flex-wrap: wrap;
+}
+.hero-meta-item {
+  font-size: 0.82rem; opacity: 0.8;
+}
+.hero-meta-item strong { opacity: 1; font-weight: 600; display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
+
+/* ── Content ── */
+.doc-content { min-width: 0; }
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem; font-weight: 700;
+  color: var(--green); margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-light);
+  scroll-margin-top: 80px;
+}
+.section-number { color: var(--green-mid); margin-right: 0.3rem; }
+
+.section-heading:first-child { margin-top: 0; }
+
+.subsection-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--ink); margin: 1.5rem 0 0.5rem;
+}
+
+.policy-text {
+  font-size: 0.95rem; color: var(--ink-soft);
+  margin-bottom: 0.9rem; text-align: justify;
+  line-height: 1.8;
+}
+
+.policy-list {
+  margin: 0.5rem 0 1rem 0; padding-left: 0; list-style: none;
+}
+.policy-list li {
+  font-size: 0.92rem; color: var(--ink-soft);
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative; line-height: 1.7;
+  border-bottom: 1px solid var(--green-light);
+}
+.policy-list li:last-child { border-bottom: none; }
+.policy-list li::before {
+  content: ''; position: absolute; left: 0; top: 0.85rem;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+}
+
+.note-box {
+  background: var(--note-bg);
+  border-left: 4px solid var(--green);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.note-box p { font-size: 0.88rem; color: var(--ink-soft); font-style: italic; line-height: 1.7; margin: 0; }
+
+.warning-box {
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.warning-box p { font-size: 0.88rem; color: #7a1f1f; line-height: 1.7; margin: 0; font-weight: 500; }
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--ink); color: rgba(255,255,255,0.5);
+  text-align: center; padding: 2rem; font-size: 0.8rem;
+  margin-top: 4rem;
+}
+.site-footer a { color: var(--green-mid); text-decoration: none; }
+.site-footer strong { color: rgba(255,255,255,0.8); }
+
+/* ── Back to top ── */
+.back-top {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: var(--green); color: white;
+  width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(27,122,74,0.35);
+  opacity: 0; transition: opacity 0.3s;
+}
+.back-top.visible { opacity: 1; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .toc-sidebar { display: none; }
+  .doc-hero { padding: 2rem; }
+  .hero-title { font-size: 1.8rem; }
+}
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="#" class="brand">
+      <span class="brand-name">GreenLeafTech</span>
+    </a>
+    <span class="header-date">Effective April 18, 2026</span>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc-sidebar">
+    <div class="toc-label">Contents</div>
+    <ul class="toc-list">
+<li><a href="#1-introduction-and-acceptance-of-terms">1. Introduction and Acceptance of Terms</a></li>
+<li><a href="#2-about-greenleaftech-and-syncspend">2. About GreenLeafTech and SyncSpend</a></li>
+<li><a href="#3-eligibility-and-age-requirements">3. Eligibility and Age Requirements</a></li>
+<li><a href="#4-account-registration-and-security">4. Account Registration and Security</a></li>
+<li><a href="#5-free-and-paid-services">5. Free and Paid Services</a></li>
+<li><a href="#6-subscriptions-free-trial-and-in-app-purchases">6. Subscriptions, Free Trial, and In-App Purchases</a></li>
+<li><a href="#7-group-features-ownership-and-member-rules">7. Group Features, Ownership, and Member Rules</a></li>
+<li><a href="#8-data-responsibility-and-device-obligations">8. Data Responsibility and Device Obligations</a></li>
+<li><a href="#9-acceptable-use-policy">9. Acceptable Use Policy</a></li>
+<li><a href="#10-intellectual-property-rights">10. Intellectual Property Rights</a></li>
+<li><a href="#11-account-suspension-and-termination">11. Account Suspension and Termination</a></li>
+<li><a href="#12-third-party-services-and-links">12. Third-Party Services and Links</a></li>
+<li><a href="#13-disclaimers-and-warranties">13. Disclaimers and Warranties</a></li>
+<li><a href="#14-limitation-of-liability">14. Limitation of Liability</a></li>
+<li><a href="#15-indemnification">15. Indemnification</a></li>
+<li><a href="#16-dispute-resolution">16. Dispute Resolution</a></li>
+<li><a href="#17-severability">17. Severability</a></li>
+<li><a href="#18-entire-agreement">18. Entire Agreement</a></li>
+<li><a href="#19-changes-to-these-terms">19. Changes to These Terms</a></li>
+<li><a href="#20-force-majeure">20. Force Majeure</a></li>
+<li><a href="#21-assignment">21. Assignment</a></li>
+<li><a href="#22-contact-information">22. Contact Information</a></li>
+    </ul>
+  </aside>
+
+  <main class="doc-content">
+
+    <div class="doc-hero">
+      <div class="hero-company">GreenLeafTech &mdash; SyncSpend</div>
+      <h1 class="hero-title">Terms of Service</h1>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><strong>Effective</strong>April 18, 2026</div>
+        <div class="hero-meta-item"><strong>Last Updated</strong>April 18, 2026</div>
+        <div class="hero-meta-item"><strong>Version</strong>1.0</div>
+        <div class="hero-meta-item"><strong>Also see</strong><a href="syncspend_privacy_policy.html" style="color:#7dd9a6">Privacy Policy</a></div>
+      </div>
+    </div>
+
+<h2 id="1-introduction-and-acceptance-of-terms" class="section-heading"><span class="section-number">1.</span> Introduction and Acceptance of Terms</h2>
+<p class="policy-text">These Terms of Service ("Terms", "Agreement") constitute a legally binding agreement between you ("User", "you", "your") and GreenLeafTech ("we", "us", "our", "Developer", "Company"), the developer and sole owner of the SyncSpend mobile application ("App", "SyncSpend", "Service").</p>
+<p class="policy-text">By downloading, installing, registering, accessing, or using SyncSpend in any manner, you confirm that you have read, understood, and agree to be bound by these Terms, including all policies incorporated herein by reference. These Terms apply to all users of the App worldwide, including free-tier users, paid subscribers, group owners, and group members.</p>
+<div class="warning-box"><p>PLEASE READ THESE TERMS CAREFULLY BEFORE USING SYNCSPEND. IF YOU DO NOT AGREE TO THESE TERMS IN FULL, YOU MUST IMMEDIATELY CEASE ALL USE OF THE APP AND UNINSTALL IT FROM YOUR DEVICE. YOUR CONTINUED USE OF SYNCSPEND CONSTITUTES YOUR ONGOING ACCEPTANCE OF THESE TERMS.</p></div>
+<p class="policy-text">These Terms must be read together with our Privacy Policy, which is incorporated into and forms part of this Agreement. In the event of a conflict between these Terms and the Privacy Policy on matters of data handling, the Privacy Policy shall prevail on those matters. Service availability and feature access may vary by region depending on local laws, payment infrastructure, and platform availability. GreenLeafTech makes no representation that SyncSpend is available or appropriate for use in all jurisdictions.</p>
+<h2 id="2-about-greenleaftech-and-syncspend" class="section-heading"><span class="section-number">2.</span> About GreenLeafTech and SyncSpend</h2>
+<p class="policy-text">GreenLeafTech is the developer, owner, and operator of SyncSpend. SyncSpend is a mobile application designed to enable individuals and groups to record, manage, and settle financial expenditures transparently, securely, and responsibly.</p>
+<p class="policy-text">Developer: GreenLeafTech</p>
+<p class="policy-text">Contact Email: greenleaftech.co.in@gmail.com</p>
+<p class="policy-text">Jurisdiction of Incorporation: India</p>
+<p class="policy-text">GreenLeafTech is the sole owner of all intellectual property, source code, design, data architecture, service logic, branding, and all other proprietary elements of SyncSpend. Nothing in these Terms transfers, licenses, or conveys any ownership interest, right, or title in SyncSpend or any part thereof to the User.</p>
+<h2 id="3-eligibility-and-age-requirements" class="section-heading"><span class="section-number">3.</span> Eligibility and Age Requirements</h2>
+<p class="policy-text">By using SyncSpend, you represent and warrant that you meet the following eligibility requirements:</p>
+<ul class="policy-list">
+<li>You are at least 18 years of age if you are located in India, in compliance with the Digital Personal Data Protection Act 2023 (DPDP Act). If you are between 13 and 17 years of age and located in India, you may only use SyncSpend with verifiable parental or legal guardian consent, and your parent or guardian must accept these Terms on your behalf.</li>
+<li>You are at least 13 years of age if you are located in any jurisdiction other than India, in compliance with the Children's Online Privacy Protection Act (COPPA) and applicable regional laws.</li>
+<li>You have the full legal capacity and authority to enter into a binding contract under the laws of your jurisdiction.</li>
+<li>Your use of SyncSpend does not violate any applicable law, regulation, or court order in your jurisdiction.</li>
+<li>You are not a person barred from using the App under the laws of India or any other applicable jurisdiction.</li>
+</ul>
+<p class="policy-text">GreenLeafTech reserves the right to suspend or terminate any account that is found to be in violation of these eligibility requirements, without notice and without liability.</p>
+<h2 id="4-account-registration-and-security" class="section-heading"><span class="section-number">4.</span> Account Registration and Security</h2>
+<h3 class="subsection-heading">4.1 Account Creation</h3>
+<p class="policy-text">To access cloud-based and group features of SyncSpend, you must create an account using a valid email address and a password, or through a supported third-party authentication provider. By creating an account, you represent that all information you provide is accurate, current, and complete, and you agree to maintain and promptly update your information to keep it accurate and complete.</p>
+<h3 class="subsection-heading">4.2 One Account Per User</h3>
+<p class="policy-text">Each user is permitted to maintain one active account. GreenLeafTech reserves the right to merge, suspend, or terminate duplicate accounts without prior notice.</p>
+<h3 class="subsection-heading">4.3 Account Security</h3>
+<ul class="policy-list">
+<li>You are solely responsible for maintaining the confidentiality and security of your account credentials, including your password.</li>
+<li>You are solely responsible for all activities that occur under your account, whether or not authorised by you.</li>
+<li>You must immediately notify GreenLeafTech at greenleaftech.co.in@gmail.com if you suspect any unauthorised access to or use of your account.</li>
+<li>GreenLeafTech will not be liable for any loss or damage arising from your failure to maintain the security of your account credentials.</li>
+<li>You must not share your account credentials with any third party or allow any other person to access your account.</li>
+</ul>
+<h3 class="subsection-heading">4.4 Authentication</h3>
+<p class="policy-text">Authentication is handled exclusively by trusted third-party authentication providers. GreenLeafTech does not store your passwords directly. You are responsible for complying with the terms of any third-party authentication provider you use to access SyncSpend.</p>
+<h2 id="5-free-and-paid-services" class="section-heading"><span class="section-number">5.</span> Free and Paid Services</h2>
+<h3 class="subsection-heading">5.1 Free Tier</h3>
+<p class="policy-text">SyncSpend offers a free tier that provides access to personal expense tracking features. The free tier is subject to the following conditions:</p>
+<ul class="policy-list">
+<li>Personal expense tracking features are available free of charge. Certain advanced features within the personal tier may be designated as premium features and made available only to paid subscribers, as indicated within the App.</li>
+<li>Group expense features are not available to free-tier users beyond the applicable free trial period as described in Section 6.</li>
+<li>Free-tier users' group cloud data is retained for up to 2 (two) years from the date of entry, after which data is permanently deleted.</li>
+<li>GreenLeafTech reserves the right to modify, restrict, or discontinue any free-tier feature at any time without notice or liability to the User.</li>
+</ul>
+<h3 class="subsection-heading">5.2 Paid Tier</h3>
+<p class="policy-text">Paid subscription plans unlock group expense features and extended data retention. The paid tier provides:</p>
+<ul class="policy-list">
+<li>Full access to group expense creation, management, and settlement features.</li>
+<li>Group cloud data retention for up to 5 (five) years from the date of entry, comprising 2 (two) years of live readable data and up to 3 (three) additional years of archived read-only data.</li>
+<li>Access to data export features for group data as included in the subscription.</li>
+<li>Such other features as GreenLeafTech may designate as paid features from time to time.</li>
+</ul>
+<h3 class="subsection-heading">5.3 Feature Availability</h3>
+<p class="policy-text">The specific features included in each tier, and the pricing applicable to paid plans, are determined by GreenLeafTech at its sole discretion and are displayed within the App and on the Google Play Store listing. SyncSpend is a continuously evolving service. Features may be added, modified, or removed as the service evolves and as GreenLeafTech deems appropriate. GreenLeafTech reserves the right to add, modify, remove, or reprice any feature or subscription plan at any time. Continued use of the App following any such change constitutes acceptance of the revised terms.</p>
+<h2 id="6-subscriptions-free-trial-and-in-app-purchases" class="section-heading"><span class="section-number">6.</span> Subscriptions, Free Trial, and In-App Purchases</h2>
+<h3 class="subsection-heading">6.1 Free Trial</h3>
+<ul class="policy-list">
+<li>GreenLeafTech offers a free trial period of 30 (thirty) days for group features to new subscribers.</li>
+<li>Each user is entitled to one free trial per registered account. The free trial entitlement is tied to the registered email address and cannot be transferred, duplicated, or reused.</li>
+<li>GreenLeafTech enforces the one-trial-per-user policy by retaining the user's email address for up to 12 (twelve) months following account deletion, as described in the Privacy Policy. Any attempt to circumvent this policy by creating multiple accounts shall constitute a violation of these Terms and may result in immediate account termination.</li>
+<li>Subscription billing commences automatically at the end of the free trial period unless the subscription is cancelled at least 24 hours before the trial expires.</li>
+<li>GreenLeafTech reserves the right to modify, suspend, or discontinue the free trial offer at any time without notice.</li>
+</ul>
+<h3 class="subsection-heading">6.2 Subscriptions and Auto-Renewal</h3>
+<ul class="policy-list">
+<li>Paid subscriptions are billed on a recurring basis through Google Play Billing at the rates displayed in the App and on the Google Play Store at the time of purchase.</li>
+<li>Subscriptions renew automatically at the end of each billing period unless cancelled by the User through Google Play at least 24 hours before the renewal date.</li>
+<li>GreenLeafTech reserves the right to change subscription pricing at any time. Where a price increase affects an existing subscriber, GreenLeafTech will provide at least 30 (thirty) days' advance notice prior to the price change taking effect, in addition to any notice required by Google Play's policies. Continued use of the subscription after a price change takes effect constitutes acceptance of the new price.</li>
+<li>Subscription management, purchase validation, entitlement tracking, and receipt verification are handled by RevenueCat, Inc. on behalf of GreenLeafTech. Users' purchase history and anonymous subscriber identifiers are processed by RevenueCat as described in the Privacy Policy.</li>
+</ul>
+<h3 class="subsection-heading">6.3 Cancellation</h3>
+<ul class="policy-list">
+<li>You may cancel your subscription at any time through Google Play. Cancellation takes effect at the end of the current billing period. You will retain access to paid features until the expiry of the period for which you have paid.</li>
+<li>Cancellation does not entitle you to a refund for any portion of the current billing period, except as provided under Google Play's refund policy.</li>
+<li>Upon cancellation, your account will revert to the free tier at the end of the current billing period. Group data will remain accessible subject to the free-tier retention limits.</li>
+</ul>
+<h3 class="subsection-heading">6.4 Refunds</h3>
+<p class="policy-text">All refund requests are governed exclusively by Google Play's refund policy. GreenLeafTech does not process refunds directly and makes no representation that any refund will be granted. To request a refund, you must submit your request through the Google Play Store. GreenLeafTech is not responsible for Google Play's refund decisions.</p>
+<h3 class="subsection-heading">6.5 Payment Processing</h3>
+<ul class="policy-list">
+<li>All payments are processed exclusively through Google Play Billing. GreenLeafTech does not collect, store, or process your payment card details, bank account information, or any other financial credentials.</li>
+<li>GreenLeafTech is not responsible for any payment failures, charges, or disputes arising from your Google Play account or payment method.</li>
+<li>By initiating a purchase within SyncSpend, you agree to Google Play's terms of service and payment terms in addition to these Terms.</li>
+</ul>
+<h2 id="7-group-features-ownership-and-member-rules" class="section-heading"><span class="section-number">7.</span> Group Features, Ownership, and Member Rules</h2>
+<h3 class="subsection-heading">7.1 Nature of Group Expense Records</h3>
+<p class="policy-text">SyncSpend's group feature is designed as an expense logging tool for funds administered by the group owner. Expense entries recorded within a group represent logs of expenditures made from funds under the group owner's administration. Members who create entries within a group are recording how the group owner's administered funds were spent. Group expense entries may contain personal data contributed by members, processed jointly for the purpose of shared financial record-keeping. Users acknowledge that participation in a group involves shared data control between the group owner and members within the boundaries described in this Section. Accordingly, group expense records are primarily the administrative records of the group owner.</p>
+<h3 class="subsection-heading">7.2 Group Owner Rights and Responsibilities</h3>
+<ul class="policy-list">
+<li>The group owner has exclusive rights to create, manage, configure, and permanently delete the group and all data within it.</li>
+<li>The group owner may add or remove members at any time without notice or explanation.</li>
+<li>The group owner can view all expense entries logged by all current and former members within their groups.</li>
+<li>The group owner is solely responsible for the accuracy of group financial records and for any decisions made on the basis of those records.</li>
+<li>When a group owner permanently deletes a group, all associated group data including expense entries, settlement records, and member records are permanently and irrecoverably erased from cloud servers and locally cached copies. This action cannot be undone. The group owner bears sole responsibility for exporting any required data before deleting the group.</li>
+<li>The group owner is responsible for ensuring that all group members are informed of and agree to these Terms before being added to any group.</li>
+</ul>
+<h3 class="subsection-heading">7.3 Member Conduct and Limitations</h3>
+<ul class="policy-list">
+<li>Group members may log expense entries within groups they have been added to by the group owner.</li>
+<li>A member may edit or delete their most recently submitted expense entry within a group, provided no subsequent expense entry has been submitted by any member after their entry. Once any subsequent entry exists, the earlier entry is permanently locked and cannot be edited or deleted. This rule exists to preserve the integrity of the sequential financial record.</li>
+<li>Members may not edit, delete, or alter any expense entry submitted by another member.</li>
+<li>Members may not attempt to circumvent the entry locking mechanism through any technical or other means.</li>
+<li>Members acknowledge that their expense entries, once locked, form part of a permanent financial record owned and administered by the group owner.</li>
+</ul>
+<h3 class="subsection-heading">7.4 Member Removal</h3>
+<ul class="policy-list">
+<li>When a member is removed from a group, they immediately and permanently lose the ability to view, access, add, or modify any data within that group.</li>
+<li>Expense entries previously submitted by a removed member remain within the group record permanently for the group owner's record-keeping purposes. The display name associated with those entries is retained as it appeared at the time of submission.</li>
+<li>A removed member has no right to demand deletion of their expense entries from a group record, as those entries form part of the group owner's financial log. GreenLeafTech will assess any such requests under the limitations described in the Privacy Policy.</li>
+</ul>
+<h3 class="subsection-heading">7.5 Group Dissolution</h3>
+<p class="policy-text">Upon deletion of a group by the group owner, all group data is permanently and irrecoverably destroyed. Neither the group owner nor any member may recover any data from a deleted group. GreenLeafTech bears no liability for any loss arising from group deletion.</p>
+<h2 id="8-data-responsibility-and-device-obligations" class="section-heading"><span class="section-number">8.</span> Data Responsibility and Device Obligations</h2>
+<h3 class="subsection-heading">8.1 Personal Expense Data</h3>
+<ul class="policy-list">
+<li>Personal expense data is stored exclusively on your device and is entirely your responsibility.</li>
+<li>GreenLeafTech has no access to, and no liability for, personal expense data stored on your device.</li>
+<li>Uninstalling the App from your device will result in the permanent and irrecoverable loss of all personal expense data stored locally. GreenLeafTech has no ability to recover this data under any circumstances.</li>
+<li>You are solely responsible for maintaining your own backups of personal expense data until an automated backup feature is made available.</li>
+</ul>
+<div class="warning-box"><p>WARNING: Uninstalling SyncSpend permanently destroys all personal expense data on your device. This data cannot be recovered by GreenLeafTech. Export your data before uninstalling.</p></div>
+<h3 class="subsection-heading">8.2 Data Export</h3>
+<ul class="policy-list">
+<li>SyncSpend provides a user-initiated data export feature for personal expense data, available free of charge. Exported data will be provided in a standard machine-readable format such as CSV or JSON, subject to the capabilities of the App at the time of export.</li>
+<li>Export of group expense data is available to paid subscribers and is included within the subscription.</li>
+<li>You are solely responsible for initiating data exports before deleting your account, uninstalling the App, or deleting any group.</li>
+<li>GreenLeafTech bears no liability for any data lost as a result of your failure to export data prior to any destructive action.</li>
+</ul>
+<h3 class="subsection-heading">8.3 Cloud Data</h3>
+<ul class="policy-list">
+<li>Group expense data stored in the cloud is subject to the retention limits described in Section 5 and the Privacy Policy. Upon expiry of the applicable retention period, data is permanently deleted and cannot be recovered.</li>
+<li>GreenLeafTech does not guarantee uninterrupted availability of cloud data and shall not be liable for data loss resulting from third-party infrastructure failures beyond GreenLeafTech's reasonable control. GreenLeafTech may maintain system activity logs including authentication events, subscription transactions, and error reports for the purposes of security, fraud prevention, and dispute resolution. Such logs are retained only as long as necessary for their stated purpose.</li>
+<li>The cloud record shall be the authoritative source of truth for all group data. Users acknowledge and agree that cloud records override any local discrepancies in all cases. In the event of a discrepancy between local and cloud data, the cloud record prevails without exception.</li>
+</ul>
+<h2 id="9-acceptable-use-policy" class="section-heading"><span class="section-number">9.</span> Acceptable Use Policy</h2>
+<p class="policy-text">By using SyncSpend, you agree that you will not, under any circumstances:</p>
+<h3 class="subsection-heading">9.1 Prohibited Conduct</h3>
+<ul class="policy-list">
+<li>Use the App for any unlawful purpose or in violation of any applicable law or regulation in any jurisdiction.</li>
+<li>Submit false, fraudulent, misleading, or fabricated expense entries within any group.</li>
+<li>Impersonate any person or entity or misrepresent your affiliation with any person or entity.</li>
+<li>Attempt to gain unauthorised access to any other user's account, group, or data.</li>
+<li>Interfere with, disrupt, or damage the App, its servers, or any network connected to the App.</li>
+<li>Attempt to reverse engineer, decompile, disassemble, or otherwise derive the source code, architecture, database schema, or any proprietary component of SyncSpend.</li>
+<li>Use any automated tool, script, bot, or scraper to access or interact with the App without GreenLeafTech's express written permission.</li>
+<li>Circumvent any access control, subscription enforcement, or security mechanism of the App.</li>
+<li>Attempt to create multiple accounts to fraudulently obtain additional free trials or to evade account suspension or termination.</li>
+<li>Use the App to store, transmit, or process any data that is defamatory, obscene, illegal, or that infringes the intellectual property rights of any third party.</li>
+<li>Engage in any conduct that could damage the reputation of GreenLeafTech or SyncSpend.</li>
+</ul>
+<h3 class="subsection-heading">9.2 Consequences of Violation</h3>
+<p class="policy-text">GreenLeafTech reserves the right, at its sole discretion and without prior notice or liability, to suspend or permanently terminate your account and access to the App for any violation of this Acceptable Use Policy or any other provision of these Terms. No refund shall be issued upon termination for cause.</p>
+<h2 id="10-intellectual-property-rights" class="section-heading"><span class="section-number">10.</span> Intellectual Property Rights</h2>
+<h3 class="subsection-heading">10.1 GreenLeafTech Ownership</h3>
+<p class="policy-text">SyncSpend, including but not limited to its source code, object code, user interface design, visual elements, database structure, logic, algorithms, branding, trademarks, trade names, service marks, logos, and all related documentation, is the exclusive intellectual property of GreenLeafTech and is protected by applicable intellectual property laws in India and internationally.</p>
+<p class="policy-text">All rights not expressly granted to the User under these Terms are reserved by GreenLeafTech. Nothing in these Terms shall be construed as transferring, licensing, or granting any ownership interest or intellectual property right to the User.</p>
+<h3 class="subsection-heading">10.2 Limited Licence to User</h3>
+<p class="policy-text">SyncSpend is an expense tracking tool only. Nothing in the App or these Terms constitutes financial, accounting, legal, or investment advice. GreenLeafTech is not a financial institution, accounting firm, or legal services provider. Users are solely responsible for their financial decisions and record-keeping obligations.</p>
+<p class="policy-text">Subject to your compliance with these Terms, GreenLeafTech grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable licence to download, install, and use SyncSpend on your personal device solely for your personal and non-commercial expense tracking purposes. This licence does not permit you to:</p>
+<ul class="policy-list">
+<li>Copy, reproduce, distribute, or create derivative works of SyncSpend or any part thereof.</li>
+<li>Sell, rent, lease, sublicense, or otherwise transfer access to SyncSpend to any third party.</li>
+<li>Remove, alter, or obscure any proprietary notices, labels, or marks on SyncSpend.</li>
+<li>Use SyncSpend for any commercial purpose without GreenLeafTech's express written consent.</li>
+</ul>
+<h3 class="subsection-heading">10.3 User-Generated Content</h3>
+<p class="policy-text">You retain ownership of the expense data and content you create within SyncSpend. By submitting content to the App, you grant GreenLeafTech a limited, non-exclusive, royalty-free licence to store, process, and transmit your content solely to the extent necessary to provide the services described in these Terms. GreenLeafTech does not claim ownership over your expense data and will not use it for any purpose beyond service delivery.</p>
+<h3 class="subsection-heading">10.4 Feedback</h3>
+<p class="policy-text">If you provide GreenLeafTech with any feedback, suggestions, or ideas regarding SyncSpend, you grant GreenLeafTech an irrevocable, perpetual, worldwide, royalty-free licence to use, implement, and commercialise such feedback without any obligation of compensation, attribution, or confidentiality to you.</p>
+<h2 id="11-account-suspension-and-termination" class="section-heading"><span class="section-number">11.</span> Account Suspension and Termination</h2>
+<h3 class="subsection-heading">11.1 Termination by User</h3>
+<ul class="policy-list">
+<li>You may terminate your account at any time by submitting a deletion request through the App or by contacting GreenLeafTech at greenleaftech.co.in@gmail.com.</li>
+<li>Upon account deletion, all cloud data associated with your account will be permanently deleted, except that your email address will be retained for 12 (twelve) months as described in the Privacy Policy.</li>
+<li>Termination of your account does not relieve you of any obligations incurred prior to termination, including outstanding payment obligations.</li>
+<li>Active subscriptions are not automatically cancelled upon account deletion. You must separately cancel your subscription through Google Play to avoid further billing.</li>
+</ul>
+<h3 class="subsection-heading">11.2 Termination or Suspension by GreenLeafTech</h3>
+<p class="policy-text">GreenLeafTech reserves the right, at its sole discretion and without prior notice or liability, to:</p>
+<ul class="policy-list">
+<li>Suspend or terminate your account and access to SyncSpend for any violation of these Terms or any applicable law.</li>
+<li>Suspend or terminate your account if GreenLeafTech determines, in its sole discretion, that your use of the App poses a risk to the App, other users, or GreenLeafTech.</li>
+<li>Suspend or terminate your account for prolonged inactivity.</li>
+<li>Suspend or terminate your account as required by applicable law or court order.</li>
+<li>Permanently discontinue the App or any part thereof with reasonable notice where practicable.</li>
+</ul>
+<h3 class="subsection-heading">11.3 Effect of Termination</h3>
+<p class="policy-text">Upon termination of your account for any reason, your licence to use SyncSpend immediately ceases. GreenLeafTech shall have no obligation to retain or provide access to any of your data following termination, except as required by applicable law or as described in the Privacy Policy. No refund shall be issued for any unused portion of a subscription period upon termination for cause.</p>
+<h2 id="12-third-party-services-and-links" class="section-heading"><span class="section-number">12.</span> Third-Party Services and Links</h2>
+<p class="policy-text">SyncSpend integrates with the following third-party services to deliver its functionality:</p>
+<ul class="policy-list">
+<li>Google Firebase: For authentication, cloud database, and crash analytics (used depending on deployment configuration).</li>
+<li>Supabase: For authentication and cloud database services (used depending on deployment configuration).</li>
+<li>RevenueCat, Inc.: For subscription management and in-app purchase processing.</li>
+<li>Google Play Billing: For payment processing.</li>
+</ul>
+<p class="policy-text">Your use of these third-party services is subject to their respective terms of service and privacy policies. GreenLeafTech is not responsible beyond the extent required by applicable law for the actions, omissions, policies, or practices of any third-party service provider. GreenLeafTech does not endorse and makes no warranty regarding any third-party service.</p>
+<p class="policy-text">In the event that any third-party service becomes unavailable, is discontinued, or changes its terms in a manner that affects SyncSpend, GreenLeafTech reserves the right to modify or discontinue affected features without liability to the User.</p>
+<h2 id="13-disclaimers-and-warranties" class="section-heading"><span class="section-number">13.</span> Disclaimers and Warranties</h2>
+<div class="warning-box"><p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW:</p></div>
+<ul class="policy-list">
+<li>SYNCSPEND IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, OR UNINTERRUPTED AVAILABILITY.</li>
+<li>GREENLEAFTECH DOES NOT WARRANT THAT THE APP WILL BE ERROR-FREE, VIRUS-FREE, OR FREE FROM OTHER HARMFUL COMPONENTS, OR THAT DEFECTS WILL BE CORRECTED.</li>
+<li>GREENLEAFTECH DOES NOT WARRANT THAT THE APP WILL MEET YOUR REQUIREMENTS OR THAT IT WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION.</li>
+<li>GREENLEAFTECH MAKES NO WARRANTY REGARDING THE ACCURACY, COMPLETENESS, OR RELIABILITY OF ANY INFORMATION OR CONTENT WITHIN THE APP.</li>
+<li>GREENLEAFTECH DOES NOT WARRANT THAT DATA STORED ON THIRD-PARTY CLOUD INFRASTRUCTURE WILL BE FREE FROM LOSS, CORRUPTION, OR UNAUTHORISED ACCESS.</li>
+</ul>
+<p class="policy-text">Nothing in this section excludes or limits any warranty that cannot be excluded or limited under mandatory applicable law, including any implied warranty that cannot be waived under the laws of your jurisdiction.</p>
+<h2 id="14-limitation-of-liability" class="section-heading"><span class="section-number">14.</span> Limitation of Liability</h2>
+<div class="warning-box"><p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, GREENLEAFTECH, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AFFILIATES, AND LICENSORS SHALL NOT BE LIABLE FOR:</p></div>
+<ul class="policy-list">
+<li>ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF DATA, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR YOUR USE OF SYNCSPEND, EVEN IF GREENLEAFTECH HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</li>
+<li>ANY LOSS OF PERSONAL EXPENSE DATA RESULTING FROM UNINSTALLATION OF THE APP, DEVICE FAILURE, ACCIDENTAL DELETION, OR ANY CAUSE BEYOND GREENLEAFTECH'S REASONABLE CONTROL.</li>
+<li>ANY LOSS OF GROUP DATA RESULTING FROM GROUP DELETION BY THE GROUP OWNER, EXPIRY OF THE APPLICABLE RETENTION PERIOD, OR THIRD-PARTY INFRASTRUCTURE FAILURE.</li>
+<li>ANY UNAUTHORISED ACCESS TO YOUR ACCOUNT OR DATA RESULTING FROM YOUR FAILURE TO MAINTAIN THE SECURITY OF YOUR ACCOUNT CREDENTIALS.</li>
+<li>ANY ACTIONS OR OMISSIONS OF THIRD-PARTY SERVICE PROVIDERS INCLUDING FIREBASE, SUPABASE, REVENUECAT, OR GOOGLE PLAY BILLING.</li>
+<li>ANY LOSS ARISING FROM YOUR RELIANCE ON THE APP FOR FINANCIAL RECORD-KEEPING WITHOUT MAINTAINING INDEPENDENT RECORDS.</li>
+</ul>
+<div class="warning-box"><p>WHERE GREENLEAFTECH'S LIABILITY CANNOT BE EXCLUDED UNDER APPLICABLE LAW, GREENLEAFTECH'S TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR IN CONNECTION WITH THESE TERMS SHALL NOT EXCEED THE TOTAL AMOUNT PAID BY YOU TO GREENLEAFTECH IN THE 12 (TWELVE) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR INR 1,000 (ONE THOUSAND INDIAN RUPEES), WHICHEVER IS GREATER.</p></div>
+<p class="policy-text">Nothing in this section excludes or limits liability for fraud, wilful misconduct, death, or personal injury caused by negligence to the extent such exclusion or limitation is prohibited by applicable law.</p>
+<h2 id="15-indemnification" class="section-heading"><span class="section-number">15.</span> Indemnification</h2>
+<p class="policy-text">To the fullest extent permitted by applicable law, you agree to defend, indemnify, and hold harmless GreenLeafTech, its officers, directors, employees, agents, affiliates, successors, and assigns from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable legal fees) arising out of or relating to:</p>
+<ul class="policy-list">
+<li>Your use of or access to SyncSpend.</li>
+<li>Your violation of any provision of these Terms.</li>
+<li>Your violation of any applicable law or regulation.</li>
+<li>Your violation of any third-party right, including any intellectual property right, privacy right, or contractual right.</li>
+<li>Any dispute between you and any other user of SyncSpend, including any group member or group owner.</li>
+<li>Any content or data you submit, post, or transmit through the App.</li>
+</ul>
+<p class="policy-text">GreenLeafTech reserves the right, at its own expense, to assume exclusive control of the defence of any matter otherwise subject to your indemnification, in which event you agree to cooperate with GreenLeafTech's defence of such matter. GreenLeafTech is not a party to disputes between users, including disputes between group owners and group members regarding expense records, financial obligations, or any other matter. Such disputes are solely between the relevant users and GreenLeafTech bears no responsibility or liability in connection with them.</p>
+<h2 id="16-dispute-resolution" class="section-heading"><span class="section-number">16.</span> Dispute Resolution</h2>
+<h3 class="subsection-heading">16.1 Good Faith Negotiation</h3>
+<p class="policy-text">In the event of any dispute, controversy, or claim arising out of or relating to these Terms or the breach, termination, or validity thereof ("Dispute"), the parties shall first attempt to resolve the Dispute through good faith negotiation. You must contact GreenLeafTech at greenleaftech.co.in@gmail.com describing the nature of the Dispute and the relief sought. GreenLeafTech will respond within 30 (thirty) days. The parties shall negotiate in good faith for a period of not less than 30 (thirty) days before initiating any formal proceedings.</p>
+<h3 class="subsection-heading">16.2 Governing Law</h3>
+<p class="policy-text">These Terms shall be governed by and construed exclusively in accordance with the laws of India, without regard to its conflict of law provisions or rules. The United Nations Convention on Contracts for the International Sale of Goods shall not apply.</p>
+<h3 class="subsection-heading">16.3 Jurisdiction</h3>
+<p class="policy-text">Subject to Section 16.1, any Dispute that cannot be resolved through good faith negotiation shall be subject to the exclusive jurisdiction of the competent courts located in India. You irrevocably consent to the personal jurisdiction of such courts and waive any objection to the laying of venue in such courts.</p>
+<h3 class="subsection-heading">16.4 Language</h3>
+<p class="policy-text">These Terms are written in the English language. In the event of any conflict between the English version and any translated version of these Terms, the English version shall prevail in all respects.</p>
+<h2 id="17-severability" class="section-heading"><span class="section-number">17.</span> Severability</h2>
+<p class="policy-text">If any provision of these Terms is held by a court of competent jurisdiction to be invalid, illegal, unenforceable, or in conflict with the law of any jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid, legal, and enforceable, and the validity, legality, and enforceability of the remaining provisions of these Terms shall not in any way be affected or impaired thereby. The parties shall negotiate in good faith to replace any invalid provision with a valid provision that achieves the same or similar economic effect.</p>
+<h2 id="18-entire-agreement" class="section-heading"><span class="section-number">18.</span> Entire Agreement</h2>
+<p class="policy-text">These Terms, together with the Privacy Policy and any other policies or guidelines incorporated herein by reference, constitute the entire agreement between you and GreenLeafTech with respect to your use of SyncSpend and supersede all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, with respect to such subject matter.</p>
+<p class="policy-text">No failure or delay by GreenLeafTech in exercising any right under these Terms shall constitute a waiver of that right. No single or partial exercise of any right shall preclude any further exercise of that right or any other right. A waiver by GreenLeafTech of any breach of these Terms shall not operate as a waiver of any subsequent breach.</p>
+<h2 id="19-changes-to-these-terms" class="section-heading"><span class="section-number">19.</span> Changes to These Terms</h2>
+<p class="policy-text">GreenLeafTech reserves the right to modify, amend, or replace these Terms at any time at its sole discretion. The revised Terms will be effective upon posting within the App or on the associated policy URL provided in the Google Play Store listing, with the updated effective date displayed at the top of the document.</p>
+<p class="policy-text">For material changes, GreenLeafTech will provide notice through in-app notification or other reasonable means at least 7 (seven) days before the changes take effect, where practicable. Your continued use of SyncSpend after the revised Terms become effective constitutes your acceptance of those Terms. If you do not agree to the revised Terms, you must stop using the App and request account deletion.</p>
+<p class="policy-text">GreenLeafTech recommends that you review these Terms periodically to remain informed of any updates.</p>
+<h2 id="20-force-majeure" class="section-heading"><span class="section-number">20.</span> Force Majeure</h2>
+<p class="policy-text">GreenLeafTech shall not be liable for any failure or delay in performing its obligations under these Terms to the extent that such failure or delay is caused by circumstances beyond GreenLeafTech's reasonable control, including but not limited to acts of God, natural disasters, war, civil unrest, government action, internet or network outages, failure of third-party service providers, power failures, or any other event of force majeure. GreenLeafTech shall use commercially reasonable efforts to resume performance as soon as practicable following any such event.</p>
+<h2 id="21-assignment" class="section-heading"><span class="section-number">21.</span> Assignment</h2>
+<p class="policy-text">You may not assign, transfer, delegate, or sublicense any of your rights or obligations under these Terms without GreenLeafTech's prior written consent. Any purported assignment in violation of this section shall be null and void.</p>
+<p class="policy-text">GreenLeafTech may freely assign, transfer, or delegate any or all of its rights and obligations under these Terms without restriction, including in connection with a merger, acquisition, sale of assets, or by operation of law. In the event of such an assignment, GreenLeafTech will provide notice to users and the assignee shall be bound by these Terms.</p>
+<h2 id="22-contact-information" class="section-heading"><span class="section-number">22.</span> Contact Information</h2>
+<p class="policy-text">For any questions, concerns, complaints, or notices in connection with these Terms of Service, please contact GreenLeafTech at:</p>
+<p class="policy-text">Developer: GreenLeafTech</p>
+<p class="policy-text">Email: greenleaftech.co.in@gmail.com</p>
+<p class="policy-text">Grievance Officer (India DPDP Act): Vinesh Kumar, GreenLeafTech — greenleaftech.co.in@gmail.com. We aim to respond to all queries within 30 (thirty) days. For account deletion requests, rights exercise requests under applicable data protection law, or legal notices, please include your registered email address and a clear description of your request or notice.</p>
+<p class="policy-text">SyncSpend - Track personal and group expenses transparently, securely, and responsibly.</p>
+<p class="policy-text">Copyright 2026 GreenLeafTech. All rights reserved.</p>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>SyncSpend</strong> &mdash; Track personal and group expenses transparently, securely, and responsibly.</p>
+  <p style="margin-top:0.5rem">&copy; 2026 GreenLeafTech. All rights reserved. &nbsp;|&nbsp; <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></p>
+</footer>
+
+<a href="#" class="back-top" title="Back to top">&#8593;</a>
+
+<script>
+
+// Active TOC highlight
+const sections = document.querySelectorAll('.section-heading');
+const tocLinks = document.querySelectorAll('.toc-list a');
+const backTop = document.querySelector('.back-top');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+      if (active) {
+        active.classList.add('active');
+        active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }
+  });
+}, { rootMargin: '-15% 0px -70% 0px' });
+
+sections.forEach(s => observer.observe(s));
+
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 400);
+});
+
+</script>
+</body>
+</html>
