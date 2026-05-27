@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — Flap Adventure: The Endless by GreenLeafTech</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --teal:        #ff1f1f;
+  --teal-dark:   #2a0000;
+  --teal-light:  rgba(255, 31, 31, 0.1);
+  --teal-mid:    #ff8b6b;
+  --ink:         #f4f4f4;
+  --ink-soft:    #bfbfbf;
+  --muted:       #888888;
+  --rule:        rgba(255, 255, 255, 0.15);
+  --bg:          #0a0a0a;
+  --card:        transparent;
+  --warn-bg:     rgba(192, 57, 43, 0.1);
+  --warn-border: #ff1f1f;
+  --note-bg:     rgba(255, 139, 107, 0.1);
+  --amber-bg:    rgba(255, 139, 107, 0.1);
+  --amber-border:#ff8b6b;
+  --green-bg:    rgba(31, 255, 114, 0.1);
+  --green-border:#1fff72;
+  --radius:      6px;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Orbitron', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: linear-gradient(180deg, #0a0a0a, #120000);
+  background-attachment: fixed;
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+/* ── Site Header ── */
+.site-header {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+  position: sticky; top: 0; z-index: 100;
+  padding: 0 2rem;
+}
+.site-header-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-name { font-family: 'Orbitron', sans-serif; font-weight: 700; color: var(--teal); font-size: 1.15rem; }
+.brand-dot { color: var(--rule); font-size: 0.8rem; }
+.brand-doc { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+.header-date { font-size: 0.78rem; color: var(--muted); }
+
+/* ── Layout ── */
+.layout {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 260px 1fr;
+  gap: 3rem; padding: 3rem 2rem;
+}
+
+/* ── Sidebar TOC ── */
+.toc-sidebar {
+  position: sticky; top: 80px; align-self: start;
+  max-height: calc(100vh - 100px); overflow-y: auto;
+}
+.toc-sidebar::-webkit-scrollbar { width: 4px; }
+.toc-sidebar::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 2px; }
+
+.toc-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 1rem;
+  padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule);
+}
+.toc-list { list-style: none; }
+.toc-list li { margin: 0; }
+.toc-list a {
+  display: block; padding: 0.35rem 0.75rem;
+  font-size: 0.8rem; color: var(--ink-soft);
+  text-decoration: none; border-left: 2px solid transparent;
+  transition: all 0.2s; line-height: 1.4;
+  font-family: 'system-ui', -apple-system, sans-serif;
+}
+.toc-list a:hover, .toc-list a.active {
+  color: var(--teal);
+  border-left-color: var(--teal);
+  background: var(--teal-light);
+}
+
+/* ── Hero ── */
+.doc-hero {
+  background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 60%, var(--teal-mid) 100%);
+  border-radius: 12px; padding: 3rem 3.5rem;
+  margin-bottom: 3rem; color: white; position: relative; overflow: hidden;
+}
+.doc-hero::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.doc-hero::after {
+  content: '';
+  position: absolute; bottom: -60px; left: 60px;
+  width: 280px; height: 280px; border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+.hero-company {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem; letter-spacing: 0.15em;
+  text-transform: uppercase; opacity: 0.75; margin-bottom: 0.5rem;
+}
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem; font-weight: 700;
+  line-height: 1.2; margin-bottom: 0.4rem;
+}
+.hero-subtitle {
+  font-size: 1rem; opacity: 0.7; margin-bottom: 1.5rem; font-style: italic;
+}
+.hero-meta { display: flex; gap: 2rem; flex-wrap: wrap; }
+.hero-meta-item { font-size: 0.82rem; opacity: 0.8; }
+.hero-meta-item strong {
+  opacity: 1; font-weight: 600; display: block;
+  font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.08em; margin-bottom: 2px;
+}
+
+/* ── Summary Card ── */
+.summary-card {
+  background: var(--teal-light);
+  border: 1px solid rgba(255, 31, 31, 0.3);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.summary-card p { font-size: 0.92rem; color: var(--ink-soft); margin: 0; line-height: 1.75; }
+.summary-card strong { color: var(--teal); }
+
+/* ── Content ── */
+.doc-content { min-width: 0; }
+
+.section-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.45rem; font-weight: 700;
+  color: var(--teal); margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--teal-light);
+  scroll-margin-top: 80px;
+}
+.section-number { color: var(--teal-mid); margin-right: 0.3rem; }
+.section-heading:first-child { margin-top: 0; }
+
+.subsection-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--ink); margin: 1.5rem 0 0.5rem;
+}
+
+.policy-text {
+  font-size: 0.95rem; color: var(--ink-soft);
+  margin-bottom: 0.9rem; text-align: justify; line-height: 1.8;
+}
+
+.policy-list {
+  margin: 0.5rem 0 1rem 0; padding-left: 0; list-style: none;
+}
+.policy-list li {
+  font-size: 0.92rem; color: var(--ink-soft);
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative; line-height: 1.7;
+  border-bottom: 1px solid var(--teal-light);
+}
+.policy-list li:last-child { border-bottom: none; }
+.policy-list li::before {
+  content: ''; position: absolute; left: 0; top: 0.85rem;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--teal);
+}
+
+/* ── Boxes ── */
+.note-box {
+  background: var(--note-bg);
+  border-left: 4px solid var(--teal);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.note-box p { font-size: 0.88rem; color: var(--ink-soft); font-style: italic; line-height: 1.7; margin: 0; }
+
+.warning-box {
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.warning-box p { font-size: 0.88rem; color: var(--warn-border); line-height: 1.7; margin: 0; font-weight: 500; }
+
+.green-box {
+  background: var(--green-bg);
+  border-left: 4px solid var(--green-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.green-box p { font-size: 0.88rem; color: var(--green-border); line-height: 1.7; margin: 0; }
+
+/* ── Data Table ── */
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+thead th {
+  background: var(--teal-dark); color: #fff;
+  text-align: left; padding: 0.65rem 0.9rem;
+  font-family: 'system-ui', -apple-system, sans-serif; font-weight: 600;
+}
+tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.02); }
+td { padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--rule); vertical-align: top; color: var(--ink-soft); font-size: 0.86rem; }
+td:first-child { font-weight: 600; color: var(--ink); }
+td a { color: var(--teal); }
+
+/* ── Contact Grid ── */
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1rem; margin-top: 1rem;
+}
+.contact-item {
+  background: var(--teal-light);
+  border: 1px solid rgba(255, 31, 31, 0.3);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+}
+.contact-item .label {
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 0.25rem;
+}
+.contact-item .value { font-size: 0.9rem; color: var(--ink); }
+.contact-item a { color: var(--teal); text-decoration: none; }
+
+/* ── Footer ── */
+.site-footer {
+  background: rgba(10, 10, 10, 0.8); color: rgba(255,255,255,0.5);
+  text-align: center; padding: 2rem; font-size: 0.8rem;
+  margin-top: 4rem;
+}
+.site-footer a { color: var(--teal-mid); text-decoration: none; }
+.site-footer strong { color: rgba(255,255,255,0.8); }
+
+/* ── Back to top ── */
+.back-top {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: var(--teal); color: white;
+  width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(255,31,31,0.35);
+  opacity: 0; transition: opacity 0.3s;
+}
+.back-top.visible { opacity: 1; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .toc-sidebar { display: none; }
+  .doc-hero { padding: 2rem; }
+  .hero-title { font-size: 1.8rem; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ── STICKY HEADER ── -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="#" class="brand">
+      <span class="brand-name">GreenLeafTech</span>
+      <span class="brand-dot">&#9679;</span>
+      <span class="brand-doc">Flap Adventure &rsaquo; Privacy Policy</span>
+    </a>
+    <span class="header-date">Effective May 27, 2026</span>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ── SIDEBAR TOC ── -->
+  <aside class="toc-sidebar">
+    <div class="toc-label">Contents</div>
+    <ul class="toc-list">
+      <li><a href="#s1">1. Introduction and Scope</a></li>
+      <li><a href="#s2">2. About GreenLeafTech and This App</a></li>
+      <li><a href="#s3">3. Information We Collect</a></li>
+      <li><a href="#s4">4. How We Use Your Data</a></li>
+      <li><a href="#s5">5. Advertising</a></li>
+      <li><a href="#s6">6. Third-Party Services</a></li>
+      <li><a href="#s7">7. How We Share Your Data</a></li>
+      <li><a href="#s8">8. Children's Privacy (COPPA)</a></li>
+      <li><a href="#s9">9. Data Retention and Deletion</a></li>
+      <li><a href="#s10">10. Data Security</a></li>
+      <li><a href="#s11">11. Your Rights and Choices</a></li>
+      <li><a href="#s12">12. International Data Transfers</a></li>
+      <li><a href="#s13">13. GDPR — EEA and UK Users</a></li>
+      <li><a href="#s14">14. CCPA / CPRA — California Users</a></li>
+      <li><a href="#s15">15. DPDP Act 2023 — Indian Users</a></li>
+      <li><a href="#s16">16. Changes to This Policy</a></li>
+      <li><a href="#s17">17. Governing Law</a></li>
+      <li><a href="#s18">18. Contact and Grievance Officer</a></li>
+    </ul>
+  </aside>
+
+  <main class="doc-content">
+
+    <!-- ── HERO ── -->
+    <div class="doc-hero">
+      <div class="hero-company">GreenLeafTech &mdash; Flap Adventure: The Endless</div>
+      <h1 class="hero-title">Privacy Policy</h1>
+      <p class="hero-subtitle">Free arcade game &middot; Fully offline &middot; No account required &middot; No advertisements</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><strong>Effective</strong>May 27, 2026</div>
+        <div class="hero-meta-item"><strong>Last Updated</strong>May 27, 2026</div>
+        <div class="hero-meta-item"><strong>Version</strong>1.0</div>
+        <div class="hero-meta-item"><strong>Developer</strong>GreenLeafTech, India</div>
+      </div>
+    </div>
+
+    <!-- ── SUMMARY ── -->
+    <div class="summary-card">
+      <p><strong>Plain-language summary:</strong> Flap Adventure: The Endless is a free, fully offline arcade game intended for users aged 13 and older (18+ in India). You do not need an account to play. The game makes no internet connections and does not contain any advertisements. We do not collect, store, or transmit any personal data, device identifiers, or usage information. The only platform-level interaction is through Google Play Services (for app installation and licence verification), which is handled entirely by the Android platform — not by us. All game progress is stored locally on your device only.</p>
+    </div>
+
+    <!-- ═══ S1 ═══ -->
+    <h2 id="s1" class="section-heading"><span class="section-number">1.</span> Introduction and Scope</h2>
+
+    <p class="policy-text">This Privacy Policy ("Policy") describes how <strong>GreenLeafTech</strong> ("we", "us", "our", "Developer") handles data in connection with the mobile application <strong>Flap Adventure: The Endless</strong> ("App", "Game") available on the Google Play Store.</p>
+
+    <p class="policy-text">By downloading, installing, or playing the Game, you ("User", "you") acknowledge that you have read and understood this Policy. If you do not agree, please uninstall the Game.</p>
+
+    <p class="policy-text">This Policy applies worldwide to all users of the Game regardless of country of residence. Where local laws impose stricter requirements, we endeavour to meet those requirements to the extent applicable.</p>
+
+    <div class="note-box"><p>This Policy is designed to comply with the Google Play Developer Programme Policy, the General Data Protection Regulation (GDPR), the California Consumer Privacy Act and California Privacy Rights Act (CCPA/CPRA), India's Digital Personal Data Protection Act 2023 (DPDP Act), and the Children's Online Privacy Protection Act (COPPA).</p></div>
+
+    <!-- ═══ S2 ═══ -->
+    <h2 id="s2" class="section-heading"><span class="section-number">2.</span> About GreenLeafTech and This App</h2>
+
+    <p class="policy-text">GreenLeafTech is the developer and data controller responsible for Flap Adventure: The Endless. The Game is a free, fully offline endless-flapper arcade game in which players guide a bird character through gaps between obstacles, aiming for the highest score.</p>
+
+    <p class="policy-text">The Game is free to play, requires no user registration or account, makes no internet or network connections, contains no advertisements, and includes no in-app purchases. GreenLeafTech develops multiple applications, each governed by its own separate privacy policy. This Policy applies exclusively to Flap Adventure: The Endless.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Field</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td>Developer</td><td>GreenLeafTech</td></tr>
+          <tr><td>Jurisdiction</td><td>India</td></tr>
+          <tr><td>Contact Email</td><td><a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></td></tr>
+          <tr><td>Grievance Officer (DPDP Act)</td><td>Vinesh Kumar — greenleaftech.co.in@gmail.com</td></tr>
+          <tr><td>App Type</td><td>Free arcade game — fully offline, no advertisements, no in-app purchases</td></tr>
+          <tr><td>Network Connectivity</td><td>None — the Game makes no internet or network connections</td></tr>
+          <tr><td>Account Required</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ═══ S3 ═══ -->
+    <h2 id="s3" class="section-heading"><span class="section-number">3.</span> Information We Collect</h2>
+
+    <div class="green-box"><p><strong>We collect no personal data.</strong> Flap Adventure: The Endless does not collect, record, transmit, or store any personal information, device identifiers, usage statistics, or analytics data of any kind. The Game operates entirely offline on your device.</p></div>
+
+    <h3 class="subsection-heading">3.1 Data Collected by GreenLeafTech</h3>
+    <p class="policy-text">GreenLeafTech collects <strong>no data whatsoever</strong> from users of this Game. There are no analytics SDKs, no crash reporting SDKs, no advertising SDKs, and no backend servers associated with this Game. No data is transmitted from the Game to GreenLeafTech or any third party.</p>
+
+    <h3 class="subsection-heading">3.2 Data Stored Locally on Your Device</h3>
+    <p class="policy-text">The Game stores the following data exclusively on your local device, which never leaves your device and is never accessible to GreenLeafTech:</p>
+    <ul class="policy-list">
+      <li>High score and game progress</li>
+      <li>In-game settings and preferences (e.g. sound on/off)</li>
+    </ul>
+    <p class="policy-text">This data is stored in the App's private internal storage, sandboxed by Android and not accessible to other applications. It is permanently deleted when you uninstall the Game.</p>
+
+    <h3 class="subsection-heading">3.3 Data Handled by Google Play Services (Platform Level)</h3>
+    <p class="policy-text">The Game is distributed through the Google Play Store. Google Play Services and Play Integrity — which are part of the Android platform and are not SDKs integrated by GreenLeafTech — may handle minimal technical data at the platform level for app installation, licence verification, and integrity checking. This processing is performed entirely by Google LLC independently of GreenLeafTech, and GreenLeafTech does not receive, access, or control any such data. For details, refer to Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+    <h3 class="subsection-heading">3.4 Android Permissions</h3>
+    <p class="policy-text">The Game requests no sensitive Android permissions. No permissions that access personal data, device identifiers, location, contacts, camera, microphone, or storage are requested or used.</p>
+    <div class="note-box"><p>The Game does not request INTERNET, ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, READ_CONTACTS, CAMERA, RECORD_AUDIO, READ_EXTERNAL_STORAGE, AD_ID, or any biometric permission.</p></div>
+
+    <!-- ═══ S4 ═══ -->
+    <h2 id="s4" class="section-heading"><span class="section-number">4.</span> How We Use Your Data</h2>
+
+    <p class="policy-text">Because GreenLeafTech collects no data from users of this Game, there is no data for us to use, process, or share. The Game functions entirely on your device without any data being transmitted to or processed by GreenLeafTech or any third-party service.</p>
+
+    <p class="policy-text">Local device data (high scores and settings) is used solely by the Game on your device to deliver the gameplay experience. GreenLeafTech has no access to this data.</p>
+
+    <!-- ═══ S5 ═══ -->
+    <h2 id="s5" class="section-heading"><span class="section-number">5.</span> Advertising</h2>
+
+    <p class="policy-text">The Game does not contain any advertisements. GreenLeafTech does not work with any advertising network in connection with this Game, and no advertising-related data (such as the Android Advertising ID) is collected or used. If advertising is introduced in a future version, this Policy will be updated in advance, users will be notified via an in-app notice, and any required consents will be sought before ads are served.</p>
+
+    <!-- ═══ S6 ═══ -->
+    <h2 id="s6" class="section-heading"><span class="section-number">6.</span> Third-Party Services</h2>
+
+    <p class="policy-text">GreenLeafTech has not integrated any third-party SDKs, analytics tools, advertising networks, crash reporting services, or backend infrastructure into this Game. The following table reflects the complete picture of platform-level services that interact with any app distributed through Google Play, which operate independently of GreenLeafTech:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Integrated by GreenLeafTech?</th><th>Privacy Policy</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Play Store</td>
+            <td>Google LLC</td>
+            <td>App distribution, installation, updates</td>
+            <td>No — platform level</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+          <tr>
+            <td>Google Play Services</td>
+            <td>Google LLC</td>
+            <td>Platform runtime, licence verification</td>
+            <td>No — platform level</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+          <tr>
+            <td>Play Integrity API</td>
+            <td>Google LLC</td>
+            <td>App authenticity and integrity checking</td>
+            <td>No — platform level</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box"><p>GreenLeafTech does not receive any data from the platform-level services listed above. All data handled by Google Play Services and Play Integrity flows exclusively between your device and Google LLC, in accordance with Google's own privacy policy.</p></div>
+
+    <!-- ═══ S7 ═══ -->
+    <h2 id="s7" class="section-heading"><span class="section-number">7.</span> How We Share Your Data</h2>
+
+    <p class="policy-text">GreenLeafTech does not collect any data from users of this Game and therefore does not share, sell, rent, trade, or disclose any personal data to any third party for any purpose.</p>
+
+    <p class="policy-text">GreenLeafTech does not sell personal information as defined under the CCPA/CPRA or any other applicable law. There is no data sharing for advertising, marketing, analytics, or any commercial purpose.</p>
+
+    <!-- ═══ S8 ═══ -->
+    <h2 id="s8" class="section-heading"><span class="section-number">8.</span> Children's Privacy (COPPA and Families Policy)</h2>
+
+    <div class="note-box"><p>Flap Adventure: The Endless is a general-audience arcade game intended for users aged 13 and older. It is not directed at children under 13 as a primary audience and is not enrolled in the Google Play Designed for Families programme. Our Target Audience and Content (TACO) selection in the Google Play Console is set to ages 13 and above, consistent with this Policy.</p></div>
+
+    <h3 class="subsection-heading">8.1 Minimum Age Requirements</h3>
+    <ul class="policy-list">
+      <li><strong>India (DPDP Act 2023):</strong> Users must be at least 18 years of age. Users between 13 and 17 years of age in India may use the Game only with verifiable parental or guardian consent, in accordance with the DPDP Act 2023.</li>
+      <li><strong>All Other Jurisdictions:</strong> Users must be at least 13 years of age, in compliance with COPPA and applicable regional laws.</li>
+    </ul>
+
+    <h3 class="subsection-heading">8.2 Visual Style and Child Appeal</h3>
+    <p class="policy-text">GreenLeafTech acknowledges that arcade games with colourful visuals may have incidental appeal to younger audiences. However, the Game is designed and marketed as a general-audience product and is not targeted at children under 13 as its primary or intended audience. This determination is reflected in our Google Play Console TACO questionnaire and content rating submission. If Google Play or any regulatory authority determines that the Game's actual audience includes a significant proportion of children under 13, GreenLeafTech will promptly review and update this Policy and any related data practices accordingly.</p>
+
+    <h3 class="subsection-heading">8.3 COPPA Compliance</h3>
+    <p class="policy-text">Because the Game is fully offline and collects no data of any kind, there is no personal information being collected from any user — including children. The Game is inherently safe from a data-collection standpoint: no analytics, no advertising identifiers, no crash reporting, and no network connections mean there is no mechanism by which any child's personal information could be collected or transmitted.</p>
+
+    <h3 class="subsection-heading">8.4 If You Have Concerns About a Child Using the App</h3>
+    <p class="policy-text">Because no data is collected, there is no data associated with any user's device that GreenLeafTech holds or could delete on request. If you have any concern about a child's use of this Game, you may contact us at <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a> with the subject line <em>"Child Privacy Concern — Flap Adventure"</em> and we will respond within 3 business days.</p>
+
+    <!-- ═══ S9 ═══ -->
+    <h2 id="s9" class="section-heading"><span class="section-number">9.</span> Data Retention and Deletion</h2>
+
+    <h3 class="subsection-heading">9.1 Retention by GreenLeafTech</h3>
+    <p class="policy-text">GreenLeafTech retains no data from users of this Game. There are no servers, databases, or data stores maintained by GreenLeafTech that hold any user data.</p>
+
+    <h3 class="subsection-heading">9.2 Local Data on Your Device</h3>
+    <p class="policy-text">Game progress (high scores) and settings are stored only on your local device. You may delete this data at any time by clearing the App's data via your Android device settings (<em>Settings &rarr; Apps &rarr; Flap Adventure: The Endless &rarr; Storage &rarr; Clear Data</em>) or by uninstalling the Game.</p>
+
+    <h3 class="subsection-heading">9.3 Data Deletion Rights</h3>
+    <p class="policy-text">Because GreenLeafTech holds no user data, there is no data for us to delete on request. Nevertheless, we fully respect your rights under applicable law. If you believe any data has been collected in connection with your use of this Game and wish to submit a deletion request, please contact us at <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a> with the subject line <em>"Data Deletion Request — Flap Adventure"</em>. We will acknowledge your request within 7 days and respond fully within 30 days.</p>
+
+    <!-- ═══ S10 ═══ -->
+    <h2 id="s10" class="section-heading"><span class="section-number">10.</span> Data Security</h2>
+
+    <p class="policy-text">Because the Game is fully offline and collects no personal data, the risk surface from a data security perspective is minimal. The following safeguards apply to local data stored on your device:</p>
+
+    <ul class="policy-list">
+      <li>All local game data (scores, settings) is stored in the App's private internal storage, sandboxed by Android and inaccessible to other applications on your device.</li>
+      <li>On devices running Android 6.0 and above, this storage benefits from Android's application sandboxing and, where enabled by the device, file-system level encryption.</li>
+      <li>The Game makes no network connections, which means no data is ever transmitted over the internet — eliminating the risk of interception in transit entirely.</li>
+      <li>GreenLeafTech maintains no servers or databases associated with this Game, eliminating server-side data breach risk entirely.</li>
+    </ul>
+
+    <p class="policy-text">In the event that any future update introduces network functionality, this Policy will be updated to describe the applicable security measures, including encryption standards, before the update is released.</p>
+
+    <!-- ═══ S11 ═══ -->
+    <h2 id="s11" class="section-heading"><span class="section-number">11.</span> Your Rights and Choices</h2>
+
+    <p class="policy-text">Regardless of where you are located, you have the following choices at any time:</p>
+
+    <ul class="policy-list">
+      <li><strong>Clear local game data:</strong> Go to <em>Settings &rarr; Apps &rarr; Flap Adventure: The Endless &rarr; Storage &rarr; Clear Data</em> to delete all locally stored scores and settings.</li>
+      <li><strong>Uninstall the Game:</strong> Permanently removes all local game data from your device.</li>
+      <li><strong>Submit a privacy request:</strong> Email <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a> for any privacy-related request, question, or concern. We will respond within 30 days.</li>
+      <li><strong>Contact the Grievance Officer (India):</strong> Indian users may raise a grievance directly with Vinesh Kumar at GreenLeafTech (see Section 15.4 and Section 18).</li>
+    </ul>
+
+    <p class="policy-text">Additional jurisdiction-specific rights are described in Sections 13, 14, and 15.</p>
+
+    <!-- ═══ S12 ═══ -->
+    <h2 id="s12" class="section-heading"><span class="section-number">12.</span> International Data Transfers</h2>
+
+    <p class="policy-text">GreenLeafTech is based in India and does not transfer any user data internationally, because no user data is collected. The Game operates entirely offline on your device.</p>
+
+    <p class="policy-text">Google LLC may process platform-level data (related to app installation and Play Integrity) in countries outside your own, including the United States, in accordance with Google's own privacy policy and applicable international data transfer mechanisms. GreenLeafTech is not a party to such transfers and does not receive any data from them.</p>
+
+    <!-- ═══ S13 ═══ -->
+    <h2 id="s13" class="section-heading"><span class="section-number">13.</span> GDPR — Rights for EEA and UK Users</h2>
+
+    <p class="policy-text">If you are located in the European Economic Area (EEA) or the United Kingdom, the General Data Protection Regulation (GDPR) or UK GDPR applies. Because GreenLeafTech does not collect or process any personal data from users of this Game, no GDPR legal basis for processing is applicable to GreenLeafTech's own activities.</p>
+
+    <h3 class="subsection-heading">13.1 Your GDPR Rights</h3>
+    <p class="policy-text">You retain the following rights under the GDPR. While GreenLeafTech holds no personal data to act upon, we honour these rights in full:</p>
+    <ul class="policy-list">
+      <li><strong>Right of Access (Article 15):</strong> Request confirmation of whether we hold any personal data about you.</li>
+      <li><strong>Right to Rectification (Article 16):</strong> Request correction of any inaccurate data we may hold.</li>
+      <li><strong>Right to Erasure (Article 17):</strong> Request deletion of any personal data we hold.</li>
+      <li><strong>Right to Restriction (Article 18):</strong> Request restriction of processing in certain circumstances.</li>
+      <li><strong>Right to Data Portability (Article 20):</strong> Receive any data we hold in a structured, machine-readable format.</li>
+      <li><strong>Right to Object (Article 21):</strong> Object to any processing based on legitimate interests.</li>
+      <li><strong>Right to Lodge a Complaint:</strong> File a complaint with your local supervisory authority (e.g. UK ICO at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>, or your national EEA authority).</li>
+    </ul>
+
+    <p class="policy-text">To exercise any of these rights, contact us at <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a> with the subject line <em>"GDPR Rights Request — Flap Adventure"</em>. We will respond within 30 days.</p>
+
+    <!-- ═══ S14 ═══ -->
+    <h2 id="s14" class="section-heading"><span class="section-number">14.</span> CCPA / CPRA — Rights for California Users</h2>
+
+    <p class="policy-text">If you are a California resident, the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA) applies. Because GreenLeafTech does not collect, sell, or share any personal information from users of this Game, most CCPA/CPRA rights are satisfied by the nature of the Game itself.</p>
+
+    <ul class="policy-list">
+      <li><strong>Right to Know:</strong> GreenLeafTech collects no personal information from users of this Game.</li>
+      <li><strong>Right to Delete:</strong> GreenLeafTech holds no personal data to delete.</li>
+      <li><strong>Right to Correct:</strong> GreenLeafTech holds no personal data to correct.</li>
+      <li><strong>Right to Opt Out of Sale or Sharing:</strong> GreenLeafTech does not sell or share personal data. No action is required to opt out.</li>
+      <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> GreenLeafTech does not collect sensitive personal information as defined by the CPRA.</li>
+      <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising any CCPA/CPRA rights.</li>
+    </ul>
+
+    <p class="policy-text">To submit a California privacy request, email <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a> with the subject line <em>"California Privacy Request — Flap Adventure"</em>. We will respond within 45 days.</p>
+
+    <!-- ═══ S15 ═══ -->
+    <h2 id="s15" class="section-heading"><span class="section-number">15.</span> DPDP Act 2023 — Rights for Indian Users</h2>
+
+    <p class="policy-text">GreenLeafTech is incorporated in India and is subject to India's Digital Personal Data Protection Act 2023 (DPDP Act) and its implementing rules.</p>
+
+    <h3 class="subsection-heading">15.1 Our Role as Data Fiduciary</h3>
+    <p class="policy-text">GreenLeafTech is the Data Fiduciary in respect of this Game. Because the Game collects no personal data, GreenLeafTech does not currently process any personal data as a Data Fiduciary under the DPDP Act in connection with this Game. Google LLC (as the provider of Google Play Services) independently handles platform-level data as a separate Data Fiduciary.</p>
+
+    <h3 class="subsection-heading">15.2 Consent</h3>
+    <p class="policy-text">Because no personal data is collected, no consent for data processing is required from users of this Game under the DPDP Act. If a future update introduces data collection, this Policy will be updated and appropriate consent mechanisms will be implemented before any such data is collected.</p>
+
+    <h3 class="subsection-heading">15.3 Your Rights as a Data Principal</h3>
+    <ul class="policy-list">
+      <li><strong>Right to Information:</strong> The right to obtain a summary of personal data being processed. GreenLeafTech processes no personal data from this Game.</li>
+      <li><strong>Right to Correction and Erasure:</strong> The right to correct or erase personal data. GreenLeafTech holds no personal data to correct or erase.</li>
+      <li><strong>Right to Grievance Redressal:</strong> The right to have grievances addressed by our designated Grievance Officer within the timeframe prescribed by the DPDP Act.</li>
+      <li><strong>Right to Nominate:</strong> The right to nominate another individual to exercise your rights under the DPDP Act on your behalf in the event of death or incapacity.</li>
+    </ul>
+
+    <h3 class="subsection-heading">15.4 Grievance Officer</h3>
+    <p class="policy-text">In accordance with the DPDP Act 2023 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules 2011, GreenLeafTech has designated the following Grievance Officer:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Field</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td>Name</td><td>Vinesh Kumar</td></tr>
+          <tr><td>Organisation</td><td>GreenLeafTech</td></tr>
+          <tr><td>Email</td><td><a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></td></tr>
+          <tr><td>Acknowledgement Time</td><td>Within 3 business days of receipt</td></tr>
+          <tr><td>Resolution Time</td><td>Within 30 days of receipt</td></tr>
+          <tr><td>Jurisdiction</td><td>India — Courts of New Delhi</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="policy-text">Users may escalate unresolved complaints to the Data Protection Board of India, once established and operational under the DPDP Act 2023.</p>
+
+    <!-- ═══ S16 ═══ -->
+    <h2 id="s16" class="section-heading"><span class="section-number">16.</span> Changes to This Policy</h2>
+
+    <p class="policy-text">GreenLeafTech reserves the right to modify this Policy at any time to reflect changes in the Game, applicable laws, or Google Play requirements. When we make material changes, we will:</p>
+
+    <ul class="policy-list">
+      <li>Update the "Last Updated" date at the top of this document and increment the version number.</li>
+      <li>Post the revised Policy at the same permanent public URL provided in the Google Play Store listing.</li>
+      <li>Where required by law or Google Play policy, notify users via an in-app notice prior to the change taking effect.</li>
+      <li>Where a future update introduces any data collection for the first time, update this Policy and seek any required consents before that update is released.</li>
+    </ul>
+
+    <p class="policy-text">Your continued use of the Game after the effective date of any updated Policy constitutes acceptance of the revised terms. If you do not agree to an updated Policy, you must stop using the Game.</p>
+
+    <!-- ═══ S17 ═══ -->
+    <h2 id="s17" class="section-heading"><span class="section-number">17.</span> Governing Law</h2>
+
+    <p class="policy-text">This Privacy Policy shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any dispute arising out of or in connection with this Policy shall be subject to the exclusive jurisdiction of the competent courts located in New Delhi, India.</p>
+
+    <p class="policy-text">This Policy is written in the English language. In the event of any conflict between an English version and any translated version, the English version shall prevail.</p>
+
+    <!-- ═══ S18 ═══ -->
+    <h2 id="s18" class="section-heading"><span class="section-number">18.</span> Contact and Grievance Officer</h2>
+
+    <p class="policy-text">For any questions, concerns, complaints, or requests in relation to this Privacy Policy, please contact us:</p>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="label">Developer</div>
+        <div class="value">GreenLeafTech</div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Jurisdiction</div>
+        <div class="value">India</div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Privacy Email</div>
+        <div class="value"><a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Grievance Officer (DPDP Act)</div>
+        <div class="value">Vinesh Kumar — <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Subject Line for Requests</div>
+        <div class="value">"Privacy Request — Flap Adventure"</div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Response Time</div>
+        <div class="value">Acknowledged within 3 days &middot; Resolved within 30 days</div>
+      </div>
+    </div>
+
+    <p class="policy-text" style="margin-top:1.25rem; font-size:0.88rem; color:var(--muted);">Flap Adventure: The Endless &mdash; Free offline arcade game by GreenLeafTech.<br>
+    Copyright &copy; 2026 GreenLeafTech. All rights reserved.</p>
+
+  </main>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <p><strong>Flap Adventure: The Endless</strong> &mdash; Free offline arcade game by GreenLeafTech</p>
+  <p style="margin-top:0.5rem">&copy; 2026 GreenLeafTech. All rights reserved. &nbsp;|&nbsp; <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></p>
+</footer>
+
+<a href="#" class="back-top" title="Back to top">&#8593;</a>
+
+<script>
+const sections = document.querySelectorAll('.section-heading');
+const tocLinks = document.querySelectorAll('.toc-list a');
+const backTop = document.querySelector('.back-top');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+      if (active) {
+        active.classList.add('active');
+        active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }
+  });
+}, { rootMargin: '-15% 0px -70% 0px' });
+
+sections.forEach(s => observer.observe(s));
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
+</body>
+</html>
