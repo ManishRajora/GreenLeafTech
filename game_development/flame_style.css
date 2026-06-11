@@ -27,7 +27,7 @@ header nav a.active, header nav a:hover{color:var(--accent-2)}
 .btn-primary{background:linear-gradient(90deg,var(--accent),#ff4b4b);color:#140000}
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent-2)}
 
-.gd-hero-visual{height:300px;border-radius:14px;background-image: url('../assets/flame2.png'), radial-gradient(circle at 20% 20%, rgba(255,31,31,0.18), transparent 10%), linear-gradient(180deg, rgba(255,31,31,0.06), rgba(255,139,107,0.02));background-size:cover, auto, auto;background-position:center, left top, left top;box-shadow:0 8px 30px rgba(255, 255, 255, 0.8);} 
+.gd-hero-visual{height:300px;border-radius:14px;background-image: url('../assets/flame2.webp'), radial-gradient(circle at 20% 20%, rgba(255,31,31,0.18), transparent 10%), linear-gradient(180deg, rgba(255,31,31,0.06), rgba(255,139,107,0.02));background-size:cover, auto, auto;background-position:center, left top, left top;box-shadow:0 8px 30px rgba(255, 255, 255, 0.8);} 
 
 .gd-services{padding:48px 6%;}
 .gd-services h2{text-align:center;color:var(--muted);margin-bottom:18px}
