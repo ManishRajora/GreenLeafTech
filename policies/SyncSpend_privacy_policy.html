@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Privacy Policy — SyncSpend by GreenLeafTech</title>
 <style>
 
@@ -226,8 +226,10 @@ body {
   <div class="site-header-inner">
     <a href="#" class="brand">
       <span class="brand-name">GreenLeafTech</span>
+      <span class="brand-dot">&#9679;</span>
+      <span class="brand-doc">SyncSpend &rsaquo; Privacy Policy</span>
     </a>
-    <span class="header-date">Effective April 18, 2026</span>
+    <span class="header-date">Effective August 25, 2026</span>
   </div>
 </header>
 
@@ -247,18 +249,19 @@ body {
 <li><a href="#9-subscriptions-in-app-purchases-and-billing">9. Subscriptions, In-App Purchases, and Billing</a></li>
 <li><a href="#10-data-export">10. Data Export</a></li>
 <li><a href="#11-third-party-services">11. Third-Party Services</a></li>
-<li><a href="#12-cookies-and-similar-technologies">12. Cookies and Similar Technologies</a></li>
-<li><a href="#13-data-security">13. Data Security</a></li>
-<li><a href="#14-your-rights">14. Your Rights</a></li>
-<li><a href="#15-location-data">15. Location Data</a></li>
-<li><a href="#16-device-contacts">16. Device Contacts</a></li>
-<li><a href="#17-push-notifications">17. Push Notifications</a></li>
-<li><a href="#18-childrens-privacy">18. Children's Privacy</a></li>
-<li><a href="#19-international-data-transfers">19. International Data Transfers</a></li>
-<li><a href="#20-limitation-of-liability-and-disclaimers">20. Limitation of Liability and Disclaimers</a></li>
-<li><a href="#21-changes-to-this-privacy-policy">21. Changes to This Privacy Policy</a></li>
-<li><a href="#22-governing-law">22. Governing Law</a></li>
-<li><a href="#23-contact-information">23. Contact Information</a></li>
+<li><a href="#12-alertlog-transaction-alert-detection">12. AlertLog — Transaction Alert Detection</a></li>
+<li><a href="#13-cookies-and-similar-technologies">13. Cookies and Similar Technologies</a></li>
+<li><a href="#14-data-security">14. Data Security</a></li>
+<li><a href="#15-your-rights">15. Your Rights</a></li>
+<li><a href="#16-location-data">16. Location Data</a></li>
+<li><a href="#17-device-contacts">17. Device Contacts</a></li>
+<li><a href="#18-push-notifications">18. Push Notifications</a></li>
+<li><a href="#19-childrens-privacy">19. Children's Privacy</a></li>
+<li><a href="#20-international-data-transfers">20. International Data Transfers</a></li>
+<li><a href="#21-limitation-of-liability-and-disclaimers">21. Limitation of Liability and Disclaimers</a></li>
+<li><a href="#22-changes-to-this-privacy-policy">22. Changes to This Privacy Policy</a></li>
+<li><a href="#23-governing-law">23. Governing Law</a></li>
+<li><a href="#24-contact-information">24. Contact Information</a></li>
     </ul>
   </aside>
 
@@ -268,10 +271,10 @@ body {
       <div class="hero-company">GreenLeafTech &mdash; SyncSpend</div>
       <h1 class="hero-title">Privacy Policy</h1>
       <div class="hero-meta">
-        <div class="hero-meta-item"><strong>Effective</strong>April 18, 2026</div>
-        <div class="hero-meta-item"><strong>Last Updated</strong>April 18, 2026</div>
-        <div class="hero-meta-item"><strong>Version</strong>1.0</div>
-        <div class="hero-meta-item"><strong>Also see</strong><a href="syncspend_terms_of_service.html" style="color:#7dd9a6">Terms of Service</a></div>
+        <div class="hero-meta-item"><strong>Effective</strong>August 25, 2026</div>
+        <div class="hero-meta-item"><strong>Last Updated</strong>August 25, 2026</div>
+        <div class="hero-meta-item"><strong>Version</strong>1.6</div>
+        <div class="hero-meta-item"><strong>Also see</strong><a href="../terms_conditions/syncspend_terms_of_service.html" style="color:#7dd9a6">Terms of Service</a></div>
       </div>
     </div>
 
@@ -287,7 +290,7 @@ body {
 <p class="policy-text">Jurisdiction: India</p>
 <p class="policy-text">GreenLeafTech is the sole owner of SyncSpend and all intellectual property, data architecture, design, and service logic associated with it. Nothing in this Policy transfers any ownership, right, or interest in the App to the User.</p>
 <h2 id="3-information-we-collect" class="section-heading"><span class="section-number">3.</span> Information We Collect</h2>
-<p class="policy-text">We follow a data minimization principle. We collect only the data strictly necessary to deliver SyncSpend's services. The categories of data we collect are described below. These disclosures are also reflected in the Google Play Data Safety section on the SyncSpend Play Store listing. In the event of any inconsistency between this Policy and the Data Safety section, this Policy shall be the authoritative reference.</p>
+<p class="policy-text">We follow a data minimization principle. We collect only the data strictly necessary to deliver SyncSpend's services. The categories of data we collect are described below. These disclosures are also reflected in the Google Play Data Safety section on the SyncSpend Play Store listing, where we have declared: data encrypted in transit (yes — SSL/TLS), data can be deleted on request (yes — see Section 8.3), no data is shared with third parties for advertising or marketing purposes. This Privacy Policy and the Google Play Data Safety section are intended to describe the same current data practices. If an inconsistency is identified, GreenLeafTech will correct the relevant disclosure promptly.</p>
 <h3 class="subsection-heading">3.1 Personal Information</h3>
 <ul class="policy-list">
 <li>Email address (required for account creation and authentication)</li>
@@ -305,37 +308,55 @@ body {
 <ul class="policy-list">
 <li>Device type and operating system version (for compatibility and crash diagnostics)</li>
 <li>App version and usage statistics (for performance improvement)</li>
-<li>Crash reports and error logs (for stability and quality assurance)</li>
+<li>Crash reports and error logs collected by Firebase Crashlytics (for stability and quality assurance) — see Section 11.2</li>
 <li>Anonymous app user identifier assigned by RevenueCat for subscription management</li>
 <li>Purchase history data collected by RevenueCat for subscription validation and fraud prevention</li>
+<li>An anonymous device identifier generated locally on your device for the purpose of sync conflict resolution and offline operation management. This identifier is generated randomly, is not linked to your identity, email address, or any personally identifiable information, and is not transmitted to GreenLeafTech servers independently of the data sync process.</li>
 </ul>
 <h3 class="subsection-heading">3.4 Data We Do NOT Collect</h3>
-<p class="policy-text">We do not intentionally collect the following. However, certain third-party SDKs integrated into the App may incidentally collect minimal technical data as described in Section 11. Where this occurs, it is governed by those providers' own privacy policies:</p>
+<p class="policy-text">We do not intentionally collect the following. However, certain third-party SDKs integrated into the App may incidentally collect minimal technical data as described in Section 11. Where this occurs, it is governed by those providers' own privacy policies. Note: if you choose to enable the optional AlertLog feature, notification content is processed on-device as described in Section 12 — this is a separate, opt-in feature and is not covered by the items below.</p>
 <ul class="policy-list">
 <li>Your device's local contacts or address book</li>
 <li>Your precise or approximate geographic location</li>
 <li>Photographs, camera output, or media files</li>
-<li>SMS, call logs, or communications</li>
+<li>Your SMS inbox or call logs — SyncSpend does not request the READ_SMS, RECEIVE_SMS, or any call-log permission</li>
 <li>Payment card numbers, bank account details, or financial credentials</li>
 <li>Biometric data of any kind</li>
 <li>Advertising identifiers (we do not serve ads)</li>
 </ul>
 <p class="policy-text">Member discovery within SyncSpend is performed exclusively by searching for other users who have already registered on the SyncSpend cloud service using their email address. The App does not access, scan, or upload the local contacts stored on your device at any time.</p>
+<h3 class="subsection-heading">3.5 Android Device Permissions</h3>
+<p class="policy-text">SyncSpend requests only the minimum Android permissions necessary to operate. The following permissions are declared in the App's manifest:</p>
+<ul class="policy-list">
+<li><strong>android.permission.INTERNET</strong> — Required for all communication between the App and cloud services (Firebase authentication, Firestore group sync, RevenueCat subscription validation). Without this permission the App cannot function.</li>
+<li><strong>android.permission.ACCESS_NETWORK_STATE</strong> — Allows the App to check whether a network connection is available before attempting to sync data, preventing unnecessary error states when the device is offline.</li>
+<li><strong>android.permission.VIBRATE</strong> — Used by the App to provide haptic feedback (vibration) for certain in-app interactions. This permission may also be included by the Firebase Cloud Messaging (FCM) SDK in preparation for future push notification functionality, which the App does not currently use.</li>
+<li><strong>android.permission.BIND_NOTIFICATION_LISTENER_SERVICE</strong> — SyncSpend declares a NotificationListenerService protected by this service-level permission, used exclusively by the optional AlertLog feature described in Section 12. This is not a normal runtime permission and you do not see a standard permission dialog for it. AlertLog becomes active only after you explicitly enable Notification Access for SyncSpend through Android's system settings, as described in Section 12.1. AlertLog is not required to use the App. See Section 12 for full details.</li>
+<li><strong>android.permission.FOREGROUND_SERVICE</strong> and <strong>android.permission.FOREGROUND_SERVICE_SPECIAL_USE</strong> — Support the AlertLog foreground service, which keeps on-device detection running reliably while AlertLog is enabled and stops when you disable it. While active, Android requires the App to display a persistent status notification titled "AlertLog · Active" under the notification channel "AlertLog Watch," containing no transaction content, which disappears when you turn AlertLog off.</li>
+<li><strong>android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> — Asks the device not to aggressively suspend AlertLog's background process, improving detection reliability on some devices. An additional manufacturer-specific "Autostart" or "Allow background activity" setting may also be needed on certain devices; where available, the App provides an optional guided prompt to that system settings screen. This setting only affects whether the App may keep running in the background and grants no additional data access. Requested only if you enable AlertLog and can be declined without affecting the rest of the App.</li>
+<li><strong>com.android.vending.BILLING</strong> — Required by Google Play's In-App Billing system to process AlertLog subscription purchases described in Section 12.5. This permission is handled entirely by Google Play; GreenLeafTech never receives, stores, or has access to your payment card number or other payment credentials through this permission. See Section 11.3 for details on our subscription provider, RevenueCat.</li>
+<li><strong>com.GreenLeafTech.expense_tracker_v3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</strong> — Auto-generated by the Android system for internal broadcast receiver registration on Android 13 and above. This permission is not user-facing, involves no personal data, and is not controlled by GreenLeafTech.</li>
+<li><strong>com.android.vending.CHECK_LICENSE</strong> — Included automatically by Google Play Services. Used by the platform for app licence verification. No personal data is collected or processed by GreenLeafTech through this permission.</li>
+<li><strong>com.google.android.providers.gsf.permission.READ_GSERVICES</strong> — Included automatically by Google Play / Firebase dependencies. Allows access to Google Services Framework configuration. No personal data is collected or processed by GreenLeafTech through this permission.</li>
+</ul>
+<div class="note-box"><p>SyncSpend does not request ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, READ_CONTACTS, CAMERA, RECORD_AUDIO, READ_EXTERNAL_STORAGE, READ_SMS, RECEIVE_SMS, or any biometric permission. No advertising identifiers are collected or used. The only sensitive system access used by SyncSpend is Android Notification Access, and it is used exclusively by the optional, opt-in AlertLog feature described in Section 12.</p></div>
+
 <h2 id="4-how-data-is-stored---personal-vs-group-expenses" class="section-heading"><span class="section-number">4.</span> How Data is Stored - Personal vs. Group Expenses</h2>
 <p class="policy-text">SyncSpend operates on a clear separation between personal expense data and group expense data. Understanding this distinction is essential for understanding your data rights and responsibilities.</p>
 <h3 class="subsection-heading">4.1 Personal Expense Data</h3>
 <p class="policy-text">Personal expense data refers to all expense entries created by a user for their own individual tracking purposes, outside of any group context.</p>
 <ul class="policy-list">
 <li>Personal expense data is stored exclusively on the user's local device.</li>
-<li>Personal expense data is never transmitted to or stored on SyncSpend cloud servers unless the user explicitly enables cloud sync features.</li>
+<li>Personal expense data is stored exclusively on your local device and is not uploaded to SyncSpend's cloud infrastructure as part of ordinary personal expense tracking. Data associated with a shared group, which you join or create voluntarily, is synced as described in Section 4.</li>
 <li>Personal expense data remains entirely under the user's control at all times.</li>
+<li>Personal expense data and locally cached group data are stored in a local SQLite database on your device managed by the App. This database is private to the App and is not accessible to other applications on the device. This database is protected by Android's application sandbox and the operating system's security mechanisms. SyncSpend does not independently encrypt this database beyond the protection provided by the device and Android platform.</li>
 <li>If the user uninstalls the App from their device, all personal expense data stored locally is permanently and irrecoverably lost. GreenLeafTech has no ability to recover this data. Users are solely responsible for maintaining backups of their personal expense data.</li>
 </ul>
 <div class="warning-box"><p>IMPORTANT: Personal expense data lives exclusively on your device. Uninstalling the App results in permanent, unrecoverable loss of all personal expense data. There is no automatic backup or cloud recovery mechanism for personal expense data at this time.</p></div>
 <h3 class="subsection-heading">4.2 Group Expense Data</h3>
 <p class="policy-text">Group expense data refers to all expense entries, settlement records, and transaction logs created within a group managed on the SyncSpend platform.</p>
 <ul class="policy-list">
-<li>Group expense data is stored securely in cloud databases managed by our third-party infrastructure providers (Firebase or Supabase, depending on deployment configuration at the time of service).</li>
+<li>Group expense data is stored securely in Google Firebase / Cloud Firestore, our third-party cloud infrastructure provider, and is also cached locally on your device as described in Section 3.5. See Section 8.2 for how these two copies relate and how long each is retained.</li>
 <li>The cloud database serves as the authoritative source of truth for all group expense data and is used to synchronize data across devices of group members.</li>
 <li>Group expense data is accessible to the group owner and authorised group members as described in Section 6 of this Policy.</li>
 <li>Group expense data is subject to data retention limits based on the user's subscription tier as described in Section 8.</li>
@@ -350,7 +371,7 @@ body {
 <li>To enable group creation, member management, expense logging, and settlement features</li>
 <li>To process, validate, and manage your in-app subscription and entitlements via RevenueCat and Google Play Billing</li>
 <li>To enforce the one-time free trial policy by verifying whether a given email address has previously used the trial feature</li>
-<li>To synchronise group expense data across devices of authorised group members</li>
+<li>To synchronise group expense data across devices of authorised group members, using your device's network connectivity status (ACCESS_NETWORK_STATE permission) to determine the optimal time to perform synchronisation</li>
 <li>To detect, prevent, and investigate fraud, abuse, or violations of our Terms of Service</li>
 <li>To send service-related communications such as critical security notices or policy updates</li>
 <li>To analyse aggregated, anonymised usage statistics for performance improvement and quality assurance</li>
@@ -374,6 +395,7 @@ body {
 <li>Group members can log expense entries within the group and view group expense records as permitted by the group owner.</li>
 <li>A member may edit or delete their most recently logged expense entry within a group, provided no subsequent expense entry has been logged by any member after their entry. Once a subsequent entry exists, the earlier entry becomes immutable and cannot be edited or deleted by the member. This restriction exists to preserve the integrity of the sequential financial record.</li>
 <li>Members do not have the right to delete or modify other members' expense entries.</li>
+<li>Regardless of subscription tier, only expense entries logged within the current calendar month are editable by the member who created them, subject to the sequential immutability rule above. Expense entries from all prior calendar months are permanently locked and read-only to preserve the integrity of the sequential financial record. This rule applies to all members including the group owner.</li>
 </ul>
 <p class="policy-text">In-app notification of the entry immutability rule will be displayed to users within the group interface. Please read in-app guidance carefully before logging entries.</p>
 <h3 class="subsection-heading">6.4 Data Upon Member Removal</h3>
@@ -402,17 +424,18 @@ body {
 <li>Not transmitted to or retained by GreenLeafTech servers unless cloud features are explicitly enabled.</li>
 <li>Permanently deleted upon uninstallation of the App from the device. GreenLeafTech has no ability to recover this data.</li>
 </ul>
-<h3 class="subsection-heading">8.2 Group Expense Data - Retention Tiers</h3>
+<h3 class="subsection-heading">8.2 Group Expense Data Retention</h3>
 <ul class="policy-list">
-<li>Editability: Regardless of subscription tier, only expense entries logged within the current calendar month are editable. All prior months’ entries are permanently locked and read-only to preserve the integrity of the financial record.</li>
-<li>Free tier users: Group expense data is retained in cloud storage and accessible as live readable data for up to 2 (two) years from the date of entry. After this period, data is permanently and automatically deleted. Free tier users do not receive archived data storage beyond the 2-year live retention window.</li>
-<li>Paid subscribers: Group expense data is retained for a total period of up to 5 (five) years from the date of entry, comprising 2 (two) years of live readable data and up to 3 (three) additional years of archived, read-only data. The total maximum retention period for paid subscribers is 5 (five) years.</li>
-<li>Upon expiry of the applicable retention period, group expense data is permanently and automatically deleted from cloud servers. Deleted data cannot be recovered under any circumstances. Users are responsible for exporting data before the retention period expires.</li>
+<li>Group expense data is stored locally on each member's device indefinitely, for as long as the App remains installed, regardless of any cloud retention period described below. You can access or export this data from your device at any time.</li>
+<li>Separately, a copy of group expense data is also retained in cloud storage. This cloud copy serves two purposes: (1) allowing you to recover your data if you lose your device, reinstall the App, or sign in on a new device, and (2) allowing existing group data to be shown to a member who newly joins the group. The cloud copy is not the primary storage location for your data.</li>
+<li>The cloud copy is retained for up to 2 (two) years from the date of entry, for all users regardless of subscription tier. Upon expiry of this period, the relevant data is permanently deleted from cloud servers only — your locally stored copy is unaffected.</li>
+<li>Independently of the above, if a group has no activity of any kind for 6 (six) consecutive months — meaning no new entries, no member additions or removals, and no member has opened the group — the group's cloud copy is considered dormant and is permanently deleted from cloud servers, regardless of how much of the 2-year window remains. This does not affect any member's locally stored copy of that group's data.</li>
+<li>Once deleted from cloud servers under either rule above, that data cannot be recovered from the cloud. If you still have the App installed on the device where you originally used the group, your local copy remains unaffected and can still be exported at any time.</li>
 </ul>
 <h3 class="subsection-heading">8.3 Account Deletion</h3>
 <p class="policy-text">Upon a user's request for account deletion:</p>
 <ul class="policy-list">
-<li>All personal profile data, personal expense data synced to cloud, and group-related data associated with the account are permanently deleted from cloud servers.</li>
+<li>Personal profile data and other account-associated data that GreenLeafTech is required to delete will be permanently deleted from cloud servers following an account deletion request. Certain historical group expense records created by the user may remain where necessary to preserve the group's shared financial record, as described in Section 6.4, and subject to applicable law.</li>
 <li>The user's email address is retained for a period of 12 (twelve) months following account deletion. This retention is necessary for the sole purpose of identifying whether the email address was previously associated with a free trial, thereby preventing fraudulent reuse of the trial feature. This is a legitimate business interest under applicable data protection law. Users may object to this processing under applicable law by contacting us at greenleaftech.co.in@gmail.com. Such objections will be assessed against our legitimate interest in preventing trial abuse, and we will respond within 30 days.</li>
 <li>After the 12-month retention period, the email address is permanently and irrecoverably deleted.</li>
 <li>Expense entries previously logged by the deleted account within active groups are governed by Section 6.4 of this Policy.</li>
@@ -432,6 +455,7 @@ body {
 <ul class="policy-list">
 <li>Personal expense tracking features are available free of charge. Certain advanced personal features may require a paid subscription, as indicated within the App at the relevant time.</li>
 <li>Group expense features are exclusively available to paid subscribers. These features are not accessible to free-tier users beyond the applicable free trial period.</li>
+<li>AlertLog is offered on a 30-day free trial; continued use after the trial requires an active paid subscription, as described in Section 12.5.</li>
 </ul>
 <p class="policy-text">The specific features included in each tier and their pricing are determined by GreenLeafTech at its sole discretion and are subject to change at any time. Current pricing and feature details are displayed within the App and on the Google Play Store listing.</p>
 <h3 class="subsection-heading">9.2 Free Trial</h3>
@@ -447,7 +471,7 @@ body {
 <li>All in-app purchases and subscription payments are processed exclusively through Google Play Billing.</li>
 <li>Subscription management, receipt validation, entitlement tracking, and purchase history processing are handled by RevenueCat, Inc., a third-party subscription management service. RevenueCat acts as a data processor on behalf of GreenLeafTech in this context.</li>
 <li>GreenLeafTech does not collect, store, or have access to your payment card details, bank account information, or any financial credentials. All payment data is managed by Google Play Billing in accordance with their terms and privacy policy.</li>
-<li>RevenueCat collects your purchase history and an anonymous app user identifier for the purposes of subscription validation, fraud prevention, and analytics. This data collection is mandatory when using RevenueCat and cannot be disabled. Please refer to RevenueCat's Privacy Policy at https://www.revenuecat.com/privacy for further details.</li>
+<li>RevenueCat collects your purchase history and an anonymous app user identifier for the purposes of subscription validation, entitlement management, and fraud prevention. This data collection is mandatory when using RevenueCat and cannot be disabled. Please refer to RevenueCat's Privacy Policy at https://www.revenuecat.com/privacy for further details.</li>
 </ul>
 <h3 class="subsection-heading">9.4 Auto-Renewal and Cancellation</h3>
 <ul class="policy-list">
@@ -470,8 +494,8 @@ body {
 <p class="policy-text">We engage the following third-party service providers to operate core features of SyncSpend. We do not sell, rent, trade, or otherwise transfer your personal data to third parties for marketing or commercial purposes. GreenLeafTech does not sell personal information as defined under the CCPA/CPRA and does not share personal information for cross-context behavioural advertising.</p>
 <h3 class="subsection-heading">11.1 Google Firebase</h3>
 <p class="policy-text">Firebase (Google LLC) is used for authentication services, cloud database storage, and crash reporting. Firebase processes data in accordance with Google's Privacy Policy (https://policies.google.com/privacy).</p>
-<h3 class="subsection-heading">11.2 Supabase</h3>
-<p class="policy-text">Supabase may be used for authentication and cloud database services as an alternative or complement to Firebase. Supabase processes data in accordance with its Privacy Policy (https://supabase.com/privacy).</p>
+<h3 class="subsection-heading">11.2 Firebase Crashlytics</h3>
+<p class="policy-text">Firebase Crashlytics (Google LLC) is used for crash reporting and error diagnostics. When the App encounters an unexpected error, Crashlytics collects technical diagnostic information such as device and model information, operating system version, App version, and a stack trace of the error. SyncSpend does not intentionally send notification content, transaction data, AlertLog records, or other personal expense information to Crashlytics. Data is processed in accordance with Google's Privacy Policy (https://policies.google.com/privacy).</p>
 <h3 class="subsection-heading">11.3 RevenueCat</h3>
 <p class="policy-text">RevenueCat, Inc. is used for in-app subscription management, purchase history validation, and entitlement tracking. RevenueCat acts as a data processor and collects purchase history and an anonymous app user identifier. RevenueCat does not collect personally identifiable information beyond what is described. RevenueCat's Privacy Policy is available at https://www.revenuecat.com/privacy.</p>
 <p class="policy-text">As required by Google Play's Data Safety policy, users should be aware that RevenueCat transmits purchase history data to its servers (api.revenuecat.com) for the purposes of subscription validation and app functionality. This is declared in our Google Play Data Safety form.</p>
@@ -479,9 +503,59 @@ body {
 <p class="policy-text">Google Play Billing (Google LLC) is used for processing in-app purchases and subscriptions. Google processes payment data in accordance with Google's Terms of Service and Privacy Policy.</p>
 <h3 class="subsection-heading">11.5 No Third-Party Advertising</h3>
 <p class="policy-text">SyncSpend currently does not contain advertisements. GreenLeafTech does not currently work with advertising networks, data brokers, or third-party marketers. No user data is shared with any third party for advertising or marketing purposes. If this changes in the future, this Policy will be updated and users will be notified prior to any such change taking effect.</p>
-<h2 id="12-cookies-and-similar-technologies" class="section-heading"><span class="section-number">12.</span> Cookies and Similar Technologies</h2>
-<p class="policy-text">SyncSpend is a mobile application and does not use browser cookies. However, third-party service providers (including Firebase and RevenueCat) may employ similar device-based tracking technologies such as anonymous identifiers, session tokens, or analytics SDKs for purposes of performance monitoring, crash analysis, and subscription management. These technologies are governed by the respective privacy policies of those providers as referenced in Section 11.</p>
-<h2 id="13-data-security" class="section-heading"><span class="section-number">13.</span> Data Security</h2>
+<h2 id="12-alertlog-transaction-alert-detection" class="section-heading"><span class="section-number">12.</span> AlertLog — Transaction Alert Detection</h2>
+<p class="policy-text">AlertLog is a separate, standalone feature of SyncSpend, distinct from the personal and group expense tracking described in Sections 3.2 and 4. It is not a variant, mode, or extension of those features, and data handled by AlertLog is not governed by Sections 3.2 or 4 unless expressly stated in this Section. AlertLog helps you log expenses automatically by detecting transaction-related alerts shown in your device's notification shade (for example, payment or transfer alerts from banking apps, UPI apps, or other apps you use). Where anything in this Section conflicts with a general statement made elsewhere in this Policy regarding notifications, SMS, or communications, this Section governs for the AlertLog feature.</p>
+<h3 class="subsection-heading">12.1 How AlertLog Works</h3>
+<ul class="policy-list">
+<li>AlertLog is disabled by default and only activates after you're shown an in-app explanation and affirmatively grant Android's Notification Access permission.</li>
+<li>Once enabled, AlertLog reads notification text via Android's Notification Listener capability, and a keyword-based filter discards anything that doesn't contain transaction-related language (for example, terms associated with debits, credits, transfers, or payments); non-matching content is not retained or processed further.</li>
+<li>Matching notifications are parsed on-device to extract structured details such as amount and transaction type, and placed into an in-app review inbox. No entry is created automatically — you must manually confirm or delete each item, and deleted items are not stored.</li>
+<li>Confirmed entries are saved into a dedicated, on-device AlertLog store, kept separate from your personal and group expense records described in Sections 3.2 and 4.</li>
+<li>Detection quality depends on the notification's content and format. Some apps or device manufacturers may truncate, summarize, or obscure notification text before AlertLog can read it, in which case an entry may be incomplete or missed entirely.</li>
+</ul>
+<h3 class="subsection-heading">12.2 Data Stays On Your Device</h3>
+<ul class="policy-list">
+<li>All AlertLog data — detected notification text, parsed transaction details, and confirmed entries — is stored exclusively in local storage on your device. It is never transmitted to GreenLeafTech's servers, Firebase, Firestore, or any other cloud infrastructure used by SyncSpend.</li>
+<li>AlertLog entries are never visible to other users, including members of any group you belong to elsewhere in the App. AlertLog does not sync or share data with group members under any circumstance.</li>
+<li>AlertLog data is not included in any automatic device or cloud backup performed by SyncSpend. The only way AlertLog data leaves your device is if you manually use the App's export feature to generate an Excel or PDF file, which is created and saved to your device (or shared by you) at your own initiative — see Section 10 (Data Export).</li>
+<li>If AlertLog data is included in your device's own operating-system-level backup (for example, a general Android device backup you configure yourself outside the App), that is governed by your device manufacturer's or Android's backup policy, not by SyncSpend or this Policy.</li>
+<li>GreenLeafTech does not sell, share, transmit, or use AlertLog-derived data for advertising, marketing, profiling, analytics, or any purpose whatsoever, because GreenLeafTech has no access to this data — it never leaves your device except through your own manual export action.</li>
+<li>AlertLog data (notification content, parsed details, and confirmed entries) is never sent to Firebase Crashlytics, RevenueCat, any analytics or crash-reporting pipeline, or any other third-party SDK integrated into the App.</li>
+</ul>
+<h3 class="subsection-heading">12.3 Retention of Intermediate Data</h3>
+<ul class="policy-list">
+<li>When a notification matches AlertLog's keyword filter, its text is temporarily processed on-device before being turned into a transaction entry. This intermediate data is automatically deleted within 3 days regardless of whether it was successfully processed, so it does not accumulate indefinitely.</li>
+<li>Separately, AlertLog may detect that an app (such as your device's default messaging app) is not showing readable notification content — meaning a message may be hidden from AlertLog by a device setting — and keeps a diagnostic record of that event on-device for up to 30 days. If this happens repeatedly for the same app within a short period, the App shows you an in-app notice suggesting you check that app's notification visibility settings. This diagnostic record is used only for this purpose and is automatically deleted after 30 days.</li>
+</ul>
+<h3 class="subsection-heading">12.4 Scope of Access and What Is Not Done</h3>
+<ul class="policy-list">
+<li>AlertLog does not request or use the READ_SMS or RECEIVE_SMS Android permissions. It does not read your SMS inbox directly.</li>
+<li>Because Android's Notification Listener capability grants access to the content of all notifications on the device, AlertLog technically has the ability to read notifications from apps unrelated to finance. The on-device keyword filter described in Section 12.1 is designed to immediately discard such content, and GreenLeafTech does not use, store, or review non-financial notification content.</li>
+<li>AlertLog does not access notification content while the permission is turned off in your device settings or in the in-app AlertLog toggle described below.</li>
+<li>The App may query which app is set as your device's default SMS handler, solely to support the in-app "message visibility" guidance that helps you check your notification settings if needed. This query never reads the content of your SMS messages and does not use the READ_SMS or RECEIVE_SMS permissions.</li>
+</ul>
+<h3 class="subsection-heading">12.5 Trial and Subscription Access</h3>
+<ul class="policy-list">
+<li>AlertLog is offered on a 30-day free trial basis. After the trial period ends, continued use of AlertLog requires an active paid subscription.</li>
+<li>To determine and enforce trial and subscription status, SyncSpend communicates with RevenueCat, our subscription management provider (see Section 11.3), to check your entitlement status. This check transmits only account/entitlement information already described in Section 11.3 (such as your anonymous RevenueCat user identifier and subscription status) — it does not transmit any AlertLog transaction data, notification content, or parsed entries, which remain on-device as described in Section 12.2.</li>
+<li>If your trial expires without a subscription, AlertLog stops detecting new notifications, but previously confirmed AlertLog entries already stored on your device are not deleted and remain accessible to you for viewing or export, unless you delete them yourself or reinstall the App.</li>
+</ul>
+<h3 class="subsection-heading">12.6 Group Feature Roadmap Disclosure</h3>
+<p class="policy-text">AlertLog does not sync, share, or connect with SyncSpend's group expense features in any way. AlertLog entries cannot currently be added to a group. If this changes in a future update, this Policy will be updated and users will be notified as described in Section 22 before that capability becomes available.</p>
+<h3 class="subsection-heading">12.7 Your Controls</h3>
+<ul class="policy-list">
+<li>You may disable AlertLog at any time from within SyncSpend's Settings screen, which revokes the App's active use of the Notification Listener component without requiring you to leave the App. Disabling AlertLog stops new detection immediately, but does not delete AlertLog entries you have already confirmed — those remain on your device, viewable and exportable, until you delete them yourself or uninstall the App.</li>
+<li>You may also revoke Notification Access permission at any time via your device's system Settings.</li>
+<li>You may delete your AlertLog data at any time from within the App. Deleting the App also deletes all locally stored AlertLog data, since none of it is retained elsewhere.</li>
+<li>If you decline or revoke this permission, or do not subscribe after your trial, all other SyncSpend features, including manual expense entry, remain fully functional. AlertLog is an optional, separately gated feature and is not required to use the App.</li>
+</ul>
+<h3 class="subsection-heading">12.8 Permission Declaration</h3>
+<p class="policy-text">Use of Android's Notification Listener capability is disclosed in SyncSpend's Google Play declarations and is subject to Google's applicable policies governing sensitive user data and notification access. This Policy will be updated if the scope of data accessed or processed by AlertLog materially changes.</p>
+<p class="policy-text">This Section describes what data AlertLog accesses, how it is used, and how long it is retained. As with the rest of the App, GreenLeafTech does not publish the internal technical implementation of AlertLog's detection or processing logic, consistent with the general principle described in Section 14.</p>
+
+<h2 id="13-cookies-and-similar-technologies" class="section-heading"><span class="section-number">13.</span> Cookies and Similar Technologies</h2>
+<p class="policy-text">SyncSpend is a mobile application and does not use browser cookies. However, third-party service providers integrated into the App (Firebase Crashlytics and RevenueCat, as described in Section 11) may use device-based technical identifiers or session tokens necessary for crash diagnostics and subscription management. These technologies are governed by the respective privacy policies of those providers as referenced in Section 11.</p>
+<h2 id="14-data-security" class="section-heading"><span class="section-number">14.</span> Data Security</h2>
 <p class="policy-text">GreenLeafTech implements industry-standard technical and organisational security measures to protect your personal data, including:</p>
 <ul class="policy-list">
 <li>SSL/TLS encryption for all data transmitted between the App and cloud servers</li>
@@ -491,9 +565,9 @@ body {
 </ul>
 <p class="policy-text">Notwithstanding these measures, no electronic storage or data transmission method is completely secure. GreenLeafTech cannot guarantee absolute security of your data. In the event of a data breach that is likely to result in a high risk to user rights and freedoms, we will notify affected users and relevant supervisory authorities as required by applicable law.</p>
 <p class="policy-text">GreenLeafTech may maintain logs of system activity, including authentication events, subscription transactions, and crash reports, for the purposes of security monitoring, fraud prevention, and dispute resolution. These logs are retained only as long as necessary for their stated purpose and are not used for any other purpose. GreenLeafTech follows a policy of non-disclosure of its internal technical architecture, infrastructure, or security implementation details to protect the integrity of its security posture and the interests of its users.</p>
-<h2 id="14-your-rights" class="section-heading"><span class="section-number">14.</span> Your Rights</h2>
+<h2 id="15-your-rights" class="section-heading"><span class="section-number">15.</span> Your Rights</h2>
 <p class="policy-text">Depending on your jurisdiction, you may have the following rights with respect to your personal data:</p>
-<h3 class="subsection-heading">14.1 GDPR Rights (European Union / EEA)</h3>
+<h3 class="subsection-heading">15.1 GDPR Rights (European Union / EEA)</h3>
 <ul class="policy-list">
 <li>Right of Access: To request a copy of the personal data we hold about you.</li>
 <li>Right to Rectification: To request correction of inaccurate or incomplete data.</li>
@@ -503,7 +577,7 @@ body {
 <li>Right to Object: To object to processing based on legitimate interests.</li>
 <li>Right to Withdraw Consent: Where processing is based on consent, to withdraw it at any time.</li>
 </ul>
-<h3 class="subsection-heading">14.2 CCPA/CPRA Rights (California, USA)</h3>
+<h3 class="subsection-heading">15.2 CCPA/CPRA Rights (California, USA)</h3>
 <ul class="policy-list">
 <li>Right to Know: The categories and specific pieces of personal data collected about you.</li>
 <li>Right to Delete: To request deletion of personal data, subject to applicable exceptions.</li>
@@ -511,52 +585,57 @@ body {
 <li>Right to Opt-Out of Sale or Sharing: GreenLeafTech does not sell or share personal data.</li>
 <li>Right to Non-Discrimination: You will not be discriminated against for exercising your privacy rights.</li>
 </ul>
-<h3 class="subsection-heading">14.3 DPDP Act Rights (India)</h3>
+<h3 class="subsection-heading">15.3 DPDP Act Rights (India)</h3>
 <ul class="policy-list">
 <li>Right to information about personal data being processed.</li>
 <li>Right to correction and erasure of personal data.</li>
 <li>Right to grievance redressal.</li>
 <li>Right to nominate another person to exercise rights on your behalf in the event of your death or incapacity.</li>
 </ul>
-<h3 class="subsection-heading">14.4 Exercising Your Rights</h3>
+<h3 class="subsection-heading">15.4 Exercising Your Rights</h3>
 <p class="policy-text">To exercise any of the above rights, including account deletion, please contact us at greenleaftech.co.in@gmail.com or use the in-app account settings where available. We will respond within the timeframe required by applicable law (generally 30 days). We may need to verify your identity before processing your request. Where we are unable to fulfil a request, we will provide a reasoned explanation.</p>
-<h2 id="15-location-data" class="section-heading"><span class="section-number">15.</span> Location Data</h2>
+<h2 id="16-location-data" class="section-heading"><span class="section-number">16.</span> Location Data</h2>
 <p class="policy-text">SyncSpend does not request, access, collect, or process your device's location data (precise or approximate) at any point during normal operation of the App. No location permissions are requested by SyncSpend.</p>
 <p class="policy-text">Third-party service providers, including Google Play Billing and RevenueCat, may derive approximate location information from network-level data (such as IP addresses) for the purposes of fraud prevention and compliance with regional regulations. Such processing is governed by those providers' own privacy policies.</p>
-<h2 id="16-device-contacts" class="section-heading"><span class="section-number">16.</span> Device Contacts</h2>
+<h2 id="17-device-contacts" class="section-heading"><span class="section-number">17.</span> Device Contacts</h2>
 <p class="policy-text">SyncSpend does not request, access, read, or upload the contact list stored on your device. The App does not request contacts-related permissions.</p>
 <p class="policy-text">Member discovery and group invitations within SyncSpend are conducted exclusively by searching for other users who have already registered a SyncSpend account using their email address on the SyncSpend cloud service. The App does not use, reference, or interact with your device's local contacts at any time.</p>
-<h2 id="17-push-notifications" class="section-heading"><span class="section-number">17.</span> Push Notifications</h2>
-<p class="policy-text">SyncSpend may implement push notifications in a future version of the App. If and when this feature is introduced, users will be asked for explicit permission before any push notifications are sent. This Policy will be updated to reflect the implementation of push notifications prior to their activation. Users will be able to manage or withdraw notification permissions through their device settings at any time.</p>
-<h2 id="18-childrens-privacy" class="section-heading"><span class="section-number">18.</span> Children's Privacy</h2>
+<h2 id="18-push-notifications" class="section-heading"><span class="section-number">18.</span> Push Notifications</h2>
+<p class="policy-text">SyncSpend may implement push notifications in a future version of the App. The <strong>android.permission.VIBRATE</strong> permission is currently used by the App to provide haptic feedback for certain in-app interactions, and may also be included by the Firebase Cloud Messaging (FCM) SDK, which is integrated in preparation for future notification support. No push notifications are sent by the App at this time. If and when push notifications are introduced, users will be asked for explicit permission before any notifications are sent, and this Policy will be updated accordingly prior to activation. Users will be able to manage or withdraw notification permissions through their device settings at any time.</p>
+<h2 id="19-childrens-privacy" class="section-heading"><span class="section-number">19.</span> Children's Privacy</h2>
 <p class="policy-text">SyncSpend is not intended for use by children. The minimum age requirements are as follows:</p>
 <ul class="policy-list">
-<li>India: Users must be at least 18 years of age, in compliance with India's Digital Personal Data Protection Act 2023 (DPDP Act). Users between 13 and 17 years of age in India may use the App only with verifiable parental or guardian consent.</li>
+<li>India: SyncSpend is not directed to children. Users must meet the minimum age required under India's Digital Personal Data Protection Act 2023 (DPDP Act) and other applicable law in their jurisdiction.</li>
 <li>All Other Jurisdictions: Users must be at least 13 years of age, in compliance with the United States Children's Online Privacy Protection Act (COPPA) and applicable regional laws.</li>
 </ul>
 <p class="policy-text">GreenLeafTech does not knowingly collect personal data from children below the applicable minimum age. If we become aware that a user is below the applicable minimum age and has not provided verifiable parental consent, we will promptly delete their account and associated data. If you believe a child has registered without appropriate consent, please contact us at greenleaftech.co.in@gmail.com.</p>
-<h2 id="19-international-data-transfers" class="section-heading"><span class="section-number">19.</span> International Data Transfers</h2>
-<p class="policy-text">GreenLeafTech is incorporated in India. Data processed through our third-party service providers (including Firebase, Supabase, and RevenueCat) may be transferred to and stored in servers located in the United States or other countries outside your jurisdiction.</p>
-<p class="policy-text">Such transfers are made subject to appropriate safeguards including Standard Contractual Clauses (SCCs) as required by the GDPR, and equivalent mechanisms required by applicable law. By using SyncSpend and consenting to this Policy, you acknowledge and consent to such transfers in accordance with applicable data protection law.</p>
+<h2 id="20-international-data-transfers" class="section-heading"><span class="section-number">20.</span> International Data Transfers</h2>
+<p class="policy-text">GreenLeafTech is incorporated in India. Data processed through our third-party service providers (including Firebase and RevenueCat) may be transferred to and stored in servers located in the United States or other countries outside your jurisdiction.</p>
+<p class="policy-text">Such transfers occur according to the transfer mechanisms and safeguards made available by the relevant service providers and required by applicable data protection law, including the GDPR where applicable. By using SyncSpend and consenting to this Policy, you acknowledge and consent to such transfers in accordance with applicable data protection law.</p>
 <p class="policy-text">Our third-party providers maintain certifications and compliance programmes appropriate to their roles as data processors. Please refer to the respective privacy policies of those providers for details of their international transfer mechanisms.</p>
-<h2 id="20-limitation-of-liability-and-disclaimers" class="section-heading"><span class="section-number">20.</span> Limitation of Liability and Disclaimers</h2>
+<h2 id="21-limitation-of-liability-and-disclaimers" class="section-heading"><span class="section-number">21.</span> Limitation of Liability and Disclaimers</h2>
 <p class="policy-text">To the fullest extent permitted by applicable law:</p>
 <ul class="policy-list">
 <li>GreenLeafTech shall not be liable for any loss of data arising from the user's failure to export or back up their data prior to uninstalling the App, deleting their account, or deleting a group.</li>
 <li>GreenLeafTech shall not be liable for any data loss arising from device failure, accidental deletion, or any cause beyond GreenLeafTech's reasonable control.</li>
 <li>GreenLeafTech makes no warranty that the App will be available without interruption, or that data stored on third-party cloud infrastructure will be free from loss or corruption.</li>
-<li>GreenLeafTech shall not be liable beyond the extent required by applicable law for the acts or omissions of third-party service providers, including but not limited to Firebase, Supabase, RevenueCat, and Google Play Billing.</li>
+<li>GreenLeafTech shall not be liable beyond the extent required by applicable law for the acts or omissions of third-party service providers, including but not limited to Firebase, RevenueCat, and Google Play Billing.</li>
 <li>GreenLeafTech shall not be responsible for any unauthorised access to user data resulting from user negligence, including failure to secure account credentials or device access.</li>
 </ul>
 <p class="policy-text">Nothing in this section excludes liability that cannot be excluded under mandatory applicable law, including liability for fraud, wilful misconduct, or death or personal injury caused by negligence.</p>
-<h2 id="21-changes-to-this-privacy-policy" class="section-heading"><span class="section-number">21.</span> Changes to This Privacy Policy</h2>
+<h2 id="22-changes-to-this-privacy-policy" class="section-heading"><span class="section-number">22.</span> Changes to This Privacy Policy</h2>
 <p class="policy-text">GreenLeafTech reserves the right to modify this Privacy Policy at any time at its sole discretion. Changes will be effective upon posting of the updated Policy, which will be made available within the App and/or on the associated policy URL provided in the Google Play Store listing.</p>
 <p class="policy-text">We will notify users of material changes through in-app notice or other reasonable means prior to the change becoming effective. The date of the most recent update is displayed at the top of this document.</p>
 <p class="policy-text">Your continued use of SyncSpend following the posting of a revised Policy constitutes your acceptance of the revised terms. If you do not agree to the revised Policy, you must stop using the App and request account deletion.</p>
-<h2 id="22-governing-law" class="section-heading"><span class="section-number">22.</span> Governing Law</h2>
-<p class="policy-text">This Privacy Policy shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any dispute arising out of or in connection with this Policy shall be subject to the exclusive jurisdiction of the competent courts located in India.</p>
+<div class="note-box"><p><strong>Version 1.2 (August 24, 2026):</strong> Added Section 12 (AlertLog — Transaction Alert Detection) describing a new, optional, opt-in feature that uses Android's Notification Access permission to detect transaction-related alerts. AlertLog data is processed and stored entirely on-device and is never transmitted to GreenLeafTech, its servers, or any third party. Corresponding updates were made to Section 3.5 to disclose the additional Android permissions this feature uses (including Notification Access, foreground service permissions, and Google Play Billing for the associated subscription), the persistent status notification shown while AlertLog is active, and optional manufacturer-specific background-activity settings some devices may require. This feature is off by default, gated behind a 30-day trial and subsequent subscription, and does not affect any other part of SyncSpend's data practices.</p></div>
+<div class="note-box"><p><strong>Version 1.3 (August 25, 2026):</strong> Corrected technical terminology describing how Notification Access is granted (Section 3.5), clarified that SyncSpend's local database is protected by Android's application sandbox rather than claiming independent database-level encryption, and resolved an earlier ambiguity by confirming Firebase (not Supabase) is the cloud provider used for group data. Added disclosure of AlertLog's intermediate-data retention periods (Section 12.3): matched notification text is retained for up to 3 days during processing, and diagnostic records used to detect notification-visibility issues are retained for up to 30 days — both are automatically deleted on schedule. Softened wording describing third-party SDK behavior (Crashlytics) and international-transfer safeguards to avoid asserting specifics beyond what GreenLeafTech has independently verified. Removed forward-looking language about planned future features from Section 12, and removed a statement that this Policy would take precedence over the Google Play Data Safety section — both are intended to accurately reflect the same current practices.</p></div>
+<div class="note-box"><p><strong>Version 1.4 (August 25, 2026):</strong> Resolved an internal inconsistency in Section 8.3 (Account Deletion) between the general deletion statement and the group-record retention exception described in Section 6.4. Removed a leftover reference to "Restricted Permissions" terminology in Section 12.8 for consistency with the terminology correction made in Version 1.3. Removed unverified references to "analytics SDKs" and RevenueCat "analytics" in Sections 11.3 and 13, since these capabilities are not confirmed as active in the current release; disclosures now describe only the confirmed purposes (crash diagnostics, subscription/entitlement management). Corrected wording describing personal expense data storage to reflect actual app behavior (there is no separate named "cloud sync" toggle; group data syncs automatically when a group is joined or created). Clarified that AlertLog's foreground service permissions are declared in the App's manifest at all times, consistent with how Android permissions generally work, while the underlying foreground service itself only runs while AlertLog is enabled.</p></div>
+<div class="note-box"><p><strong>Version 1.5 (August 25, 2026):</strong> Removed implementation-level detail from Section 3.5 and Section 12.3 that was not necessary for user or reviewer disclosure, while preserving every disclosed data practice, retention period, and permission fact unchanged. This included removing a literal internal system identifier, generalizing references to specific device manufacturers, and simplifying descriptions of AlertLog's internal data-handling steps to state what happens and how long data is retained without describing the underlying technical mechanism. Added a cross-reference in Section 12 to the existing general principle in Section 14 that GreenLeafTech does not publish internal technical implementation details.</p></div>
+<div class="note-box"><p><strong>Version 1.6 (August 25, 2026):</strong> Corrected the VIBRATE permission disclosure (Sections 3.5 and 18) to reflect that it is used for in-app haptic feedback, in addition to being included by the Firebase Cloud Messaging SDK. Clarified in Section 4.2 that group expense data is cached locally in addition to cloud storage. Fully rewrote Section 8.2 (Group Expense Data Retention): local device storage is now described as the primary, indefinite copy of group data, while cloud storage is described as serving backup-and-recovery and new-member-sync purposes only, retained for up to 2 years for all users regardless of subscription tier, with an additional 6-month group-dormancy deletion rule; the previous 5-year paid-tier archived retention has been removed as no longer applicable. Added a cross-reference in Section 9.1 noting AlertLog's own 30-day trial and subscription requirement. Tightened the prose in Section 12.1 for readability without removing any previously disclosed fact.</p></div>
+<h2 id="23-governing-law" class="section-heading"><span class="section-number">23.</span> Governing Law</h2>
+<p class="policy-text">This Privacy Policy shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any dispute arising out of or in connection with this Policy shall be subject to the exclusive jurisdiction of the competent courts located in New Delhi, India.</p>
 <p class="policy-text">This Policy is written in the English language. In the event of any conflict between an English version and a translated version of this Policy, the English version shall prevail.</p>
-<h2 id="23-contact-information" class="section-heading"><span class="section-number">23.</span> Contact Information</h2>
+<h2 id="24-contact-information" class="section-heading"><span class="section-number">24.</span> Contact Information</h2>
 <p class="policy-text">If you have any questions, concerns, complaints, or requests in relation to this Privacy Policy or our data practices, please contact us:</p>
 <p class="policy-text">Developer: GreenLeafTech</p>
 <p class="policy-text">Email: greenleaftech.co.in@gmail.com</p>
