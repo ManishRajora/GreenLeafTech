@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - GreenLeafTech</title>
     <link rel="stylesheet" href="greenLeafTech_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="description" content="GreenLeafTech specializes in innovative Android, iOS, and Web Development. Discover our collaborative apps and web solutions.">
-    <meta name="keywords" content="mobile app development, web development, Android apps, iOS apps, GreenLeafTech, custom software, custom apps development, Custom Website Development, game development, app development"">
+    <meta name="keywords" content="mobile app development, web development, Android apps, iOS apps, GreenLeafTech, custom software, custom apps development, Custom Website Development, game development, app development">
     <meta property="og:title" content="About Us - GreenLeafTech">
     <meta property="og:description" content="GreenLeafTech specializes in innovative Android, iOS, and Web Development.">
     <meta property="og:type" content="website">
@@ -19,8 +22,14 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">GreenLeafTech</a>
-            <ul>
+            <a href="index.html" class="logo">
+                <img src="assets/company_logo_rembg1.webp" alt="GreenLeafTech" class="logo-icon">
+                GreenLeafTech
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -28,17 +37,29 @@
             </ul>
         </nav>
     </header>
-    <main class="about-section">
+    <main class="about-section" style="margin-top:80px;">
         <h1>About GreenLeafTech</h1>
-        <p>We are a dedicated team specializing in app development and web development services. Our mission is to design and build high-quality mobile applications and websites that are secure, scalable, and tailored to your unique needs. Whether you’re a startup or an established business, we deliver innovative digital solutions that enhance user experience, strengthen your online presence, and support your long-term growth.</p>
+        <p>We are a dedicated team specializing in app development and web development services. Our mission is to design and build high-quality mobile applications and websites that are secure, scalable, and tailored to your unique needs. Whether you're a startup or an established business, we deliver innovative digital solutions that enhance user experience, strengthen your online presence, and support your long-term growth.</p>
         <h2>Our Vision</h2>
         <p>To be a leader in mobile App and Web development, empowering businesses and individuals with cutting-edge technology and seamless digital experiences.</p>
         <h2>Our Team</h2>
         <p>Our team consists of passionate developers, designers, and strategists dedicated to turning ideas into impactful applications.</p>
     </main>
     <footer>
-		<p>&copy; 2025 GreenLeafTech. All rights reserved.&nbsp;|&nbsp; <a href="privacy-policy.html" class="footer-link">Privacy Policy</a></p>
-	</footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/company_logo_rembg1.webp" alt="GreenLeafTech" class="footer-logo">
+                <span class="footer-brand-name">GreenLeafTech</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">About</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+                <a href="game_development/flame_home.html" target="_blank" rel="noopener" class="footer-link">Flame Studio</a>
+                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+            </div>
+            <p class="footer-copy">&copy; 2025 GreenLeafTech. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="greenLeafTech_script.js"></script>
 </body>
 </html>
