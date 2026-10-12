@@ -453,7 +453,7 @@ main {
 }
 .services-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 1.5rem;
 }
 .service-card {
@@ -575,12 +575,35 @@ main {
 	flex-direction: column;
 	gap: 0.3rem;
 }
+.app-card-badge-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.1rem;
+}
 .app-card-badge {
 	font-size: 0.75rem;
 	font-weight: 700;
 	color: var(--green-400);
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
+}
+.status-badge {
+	font-size: 0.72rem;
+	font-weight: 700;
+	padding: 0.25rem 0.65rem;
+	border-radius: 100px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	display: inline-flex;
+	align-items: center;
+}
+.status-coming-soon {
+	background: rgba(10, 200, 94, 0.12);
+	color: var(--green-300);
+	border: 1px solid rgba(10, 200, 94, 0.28);
+	box-shadow: 0 0 12px rgba(10, 200, 94, 0.15);
 }
 .app-card-content h3 {
 	font-family: 'Outfit', sans-serif;
@@ -611,6 +634,27 @@ main {
 .app-card-btn:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 6px 20px rgba(10, 200, 94, 0.3);
+}
+.btn-coming-soon {
+	background: rgba(10, 200, 94, 0.08);
+	color: var(--green-300);
+	border: 1px solid rgba(10, 200, 94, 0.25);
+	box-shadow: none;
+	cursor: default;
+	pointer-events: none;
+}
+.btn-coming-soon:hover {
+	transform: none;
+	box-shadow: none;
+}
+
+/* ============================================
+   SOFTWARE PREVIEW SECTION
+   ============================================ */
+.software-preview {
+	padding: 3rem 1.5rem 5rem;
+	max-width: var(--max-width);
+	margin: 0 auto;
 }
 
 /* ============================================
