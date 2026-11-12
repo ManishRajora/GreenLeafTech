@@ -1,67 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About — Flame Game Development</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="flame_style.css">
-    <meta name="description" content="Flame Game Development by GreenLeafTech creates premium 2D Android games with striking visuals and addictive gameplay.">
-    <meta name="keywords" content="game development, 2D games, Android games, game creation, mobile game development, Flame studio, GreenLeafTech games, Flap Adventure, Infinite Dash">
-    <meta property="og:title" content="About — Flame Game Development">
-    <meta property="og:description" content="Flame Game Development by GreenLeafTech creates premium 2D Android games with striking visuals and addictive gameplay.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="../assets/flame2_nobg.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About — Flame Game Development">
-    <meta name="twitter:description" content="Flame Game Development by GreenLeafTech creates premium 2D Android games with striking visuals and addictive gameplay.">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About — Flame Game Development</title>
+	<link rel="icon" type="image/png" href="../assets/flame2_nobg.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="flame_style.css">
+	<meta name="description" content="Flame Game Development is a studio inside GreenLeafTech that creates premium 2D & 3D games across Arcade, Action, Horror, and more.">
+	<meta name="keywords" content="game development, 2D games, 3D games, arcade, action, horror, Android games, Flame studio, GreenLeafTech games, Flap Adventure, Infinite Dash">
+	<meta property="og:title" content="About — Flame Game Development">
+	<meta property="og:description" content="Flame Game Development by GreenLeafTech creates premium 2D & 3D games with striking visuals and addictive gameplay.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="../assets/flame2_nobg.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="About — Flame Game Development">
+	<meta name="twitter:description" content="Flame Game Development by GreenLeafTech creates premium 2D & 3D games with striking visuals and addictive gameplay.">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="flame_about.html" class="logo">Flame Game Development</a>
-            <ul>
-                <li><a href="flame_about.html" class="active">About</a></li>
-                <li><a href="flame_contact.html">Contact</a></li>
-                <li><a href="flame_home.html">Flame</a></li>
-            </ul>
-        </nav>
-    </header>
+	<header>
+		<nav>
+			<a href="flame_home.html" class="logo">
+				<img src="../assets/flame2_nobg.webp" alt="Flame" class="logo-icon">
+				Flame Game Dev
+			</a>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			</button>
+			<ul id="navMenu">
+				<li><a href="flame_home.html">Home</a></li>
+				<li><a href="flame_about.html" class="active">About</a></li>
+				<li><a href="flame_contact.html">Contact</a></li>
+				<li><a href="../index.html">GreenLeafTech ↗</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <main class="gd-hero" style="grid-template-columns:1fr;">
-        <section class="gd-hero-content">
-            <div class="eyebrow">About Flame</div>
-            <h1>We are Flame — a studio inside GreenLeafTech</h1>
-            <p class="lead">Flame is part of GreenLeafTech. We design and build smooth, flawless 2D games optimized for Android devices. Our team focuses on performance, polished visuals, and intuitive controls to create memorable mobile experiences that players love.</p>
-            <div class="cta-row">
-                <a href="flame_home.html" class="btn btn-primary">See Our Work</a>
-                <a href="flame_contact.html" class="btn btn-ghost">Get In Touch</a>
-            </div>
-        </section>
-    </main>
+	<main>
+		<!-- ==================== HERO ==================== -->
+		<section class="gd-hero" id="hero" style="min-height:auto;padding-bottom:3rem;">
+			<div class="hero-bg-shapes" aria-hidden="true">
+				<div class="shape shape-1"></div>
+				<div class="shape shape-2"></div>
+			</div>
+			<div class="gd-hero-content" style="flex:1 1 100%;">
+				<span class="hero-badge">🔥 About Our Studio</span>
+				<h1>We Are <span class="text-gradient-fire">Flame</span> — A Studio Inside GreenLeafTech</h1>
+				<p class="lead">Flame is the game development arm of GreenLeafTech. We design and build high-performance 2D and 3D games optimized for Android and mobile platforms. Our team is obsessed with performance, polished visuals, intuitive controls, and creating memorable experiences that players love and keep coming back to.</p>
+				<div class="cta-row">
+					<a href="flame_home.html" class="btn btn-primary">See Our Games</a>
+					<a href="flame_contact.html" class="btn btn-ghost">Get In Touch</a>
+				</div>
+			</div>
+		</section>
 
-    <section class="gd-services">
-        <h2>Our Capabilities</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>2D Game Development</h3>
-                <p>Efficient, optimized builds for Android with tight controls and fast frame-rates.</p>
-            </div>
-            <div class="service-card">
-                <h3>Art & VFX</h3>
-                <p>Hand-crafted sprites, VFX, and animations tailored to the game's tone.</p>
-            </div>
-            <div class="service-card">
-                <h3>Polish & QA</h3>
-                <p>Focus on UX polish, device testing, and stability across target devices.</p>
-            </div>
-        </div>
-    </section>
+		<!-- ==================== WHAT DEFINES US ==================== -->
+		<section class="about-content" id="what-defines-us">
+			<div class="section-header">
+				<span class="section-eyebrow">What Defines Us</span>
+				<h2>The Flame <span class="text-gradient-fire">Philosophy</span></h2>
+			</div>
+			<div class="tech-grid">
+				<div class="tech-card">
+					<div class="tech-number">01</div>
+					<h3>Performance First</h3>
+					<p>Every frame counts. We optimize relentlessly to hit 60 FPS on target devices, keeping gameplay smooth and responsive.</p>
+				</div>
+				<div class="tech-card">
+					<div class="tech-number">02</div>
+					<h3>Visual Polish</h3>
+					<p>Hand-crafted art, fluid animations, and striking VFX. We believe great visuals are what make a game memorable.</p>
+				</div>
+				<div class="tech-card">
+					<div class="tech-number">03</div>
+					<h3>Player Obsession</h3>
+					<p>Intuitive controls, fair difficulty curves, and that "one more round" hook. Every design decision starts with the player.</p>
+				</div>
+				<div class="tech-card">
+					<div class="tech-number">04</div>
+					<h3>End-to-End</h3>
+					<p>From concept and prototyping through development, testing, launch, and live ops — we handle the full game lifecycle.</p>
+				</div>
+			</div>
+		</section>
 
-    <footer>
-        <p>&copy; 2025 Flame Game Development — part of GreenLeafTech. <a href="../privacy-policy.html">Privacy Policy</a></p>
-    </footer>
+		<!-- ==================== GENRE EXPERTISE ==================== -->
+		<section class="genres-section" id="genres">
+			<div class="section-header">
+				<span class="section-eyebrow">Genre Expertise</span>
+				<h2>Genres We <span class="text-gradient-fire">Specialize</span> In</h2>
+				<p class="section-subtitle">Our studio has deep experience building games across multiple genres and dimensions</p>
+			</div>
+			<div class="genres-grid">
+				<div class="genre-card">
+					<span class="genre-icon">🕹️</span>
+					<h3>2D Game Development</h3>
+					<p>Pixel-perfect 2D worlds with hand-crafted sprites, smooth scrolling, and tight physics. Our bread and butter — polished to perfection.</p>
+					<span class="genre-tag">Sprites · Tilemaps · Physics</span>
+				</div>
+				<div class="genre-card">
+					<span class="genre-icon">🎮</span>
+					<h3>3D Game Development</h3>
+					<p>Rich 3D environments with dynamic lighting, camera systems, and spatial audio for truly immersive mobile experiences.</p>
+					<span class="genre-tag">3D Models · Shaders · Rendering</span>
+				</div>
+				<div class="genre-card">
+					<span class="genre-icon">⚡</span>
+					<h3>Arcade Games</h3>
+					<p>Addictive quick-session mechanics, score chasing, and leaderboards — the perfect formula for casual mobile gaming.</p>
+					<span class="genre-tag">Endless · High-Score · Casual</span>
+				</div>
+				<div class="genre-card">
+					<span class="genre-icon">💥</span>
+					<h3>Action Games</h3>
+					<p>Adrenaline-fueled combat, responsive controls, and non-stop intensity. We make action feel visceral and deeply satisfying.</p>
+					<span class="genre-tag">Combat · Runner · Platformer</span>
+				</div>
+				<div class="genre-card">
+					<span class="genre-icon">👻</span>
+					<h3>Horror Games</h3>
+					<p>Chilling atmospheres, eerie sound design, and psychological tension. We craft horror that stays with you long after you stop playing.</p>
+					<span class="genre-tag">Survival · Psychological · Atmospheric</span>
+				</div>
+				<div class="genre-card">
+					<span class="genre-icon">🧩</span>
+					<h3>Puzzle & Strategy</h3>
+					<p>Clever mechanics, progressive challenge, and rewarding "aha!" moments. Games that engage the mind and keep players thinking.</p>
+					<span class="genre-tag">Logic · Tower Defense · Match</span>
+				</div>
+			</div>
+		</section>
 
-    <script src="../greenLeafTech_script.js"></script>
+		<!-- ==================== CAPABILITIES ==================== -->
+		<section class="gd-services" id="capabilities">
+			<div class="section-header">
+				<span class="section-eyebrow">Our Capabilities</span>
+				<h2>What We <span class="text-gradient-fire">Bring</span> to the Table</h2>
+			</div>
+			<div class="services-grid">
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+					</div>
+					<h3>Game Engineering</h3>
+					<p>Efficient, optimized code with clean architecture, physics systems, and rendering pipelines tuned for tight frame-rates.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+					</div>
+					<h3>Art, VFX & Animation</h3>
+					<p>Hand-crafted sprites, 3D models, particle effects, and fluid animations tailored to each game's unique visual identity.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+					</div>
+					<h3>Sound & Audio Design</h3>
+					<p>Immersive soundscapes, dynamic SFX, and atmospheric audio design that amplify the mood and player engagement.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+					</div>
+					<h3>QA & Device Testing</h3>
+					<p>Rigorous cross-device testing, performance profiling, and UX polish to ensure stability and quality on every target.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================== CTA ==================== -->
+		<section class="cta-section" id="cta">
+			<div class="cta-content">
+				<h2>Ready to build something extraordinary?</h2>
+				<p>Whether it's a solo passion project or a full game studio collaboration — we'd love to hear about it.</p>
+				<div class="cta-actions">
+					<a href="flame_contact.html" class="btn btn-primary btn-large">Contact Flame →</a>
+					<a href="flame_home.html" class="btn btn-ghost btn-large">See Our Games</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div class="footer-brand">
+				<img src="../assets/flame2_nobg.webp" alt="Flame" class="footer-logo">
+				<span class="footer-brand-name">Flame Game Dev</span>
+			</div>
+			<div class="footer-links">
+				<a href="flame_home.html" class="footer-link">Home</a>
+				<a href="flame_about.html" class="footer-link">About</a>
+				<a href="flame_contact.html" class="footer-link">Contact</a>
+				<a href="../index.html" class="footer-link">GreenLeafTech</a>
+				<a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+			</div>
+			<p class="footer-copy">&copy; 2025 Flame Game Development — part of GreenLeafTech. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="../greenLeafTech_script.js"></script>
 </body>
 </html>

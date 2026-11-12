@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// ---------- Scroll reveal animations ----------
 	const revealElements = document.querySelectorAll(
-		'.service-card, .app-card, .game-card, .why-card, .stat-item, .section-header, .cta-content, .gamedev-cta'
+		'.service-card, .app-card, .game-card, .why-card, .stat-item, .section-header, .cta-content, .gamedev-cta, .genre-card, .tech-card, .contact-card'
 	);
 	revealElements.forEach(el => el.classList.add('reveal'));
 
