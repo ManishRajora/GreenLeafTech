@@ -430,6 +430,7 @@ main {
 	box-shadow: 0 20px 60px rgba(255, 107, 43, 0.12);
 }
 .card-splash-wrap {
+	position: relative;
 	width: 100%;
 	aspect-ratio: 16 / 9;
 	overflow: hidden;
@@ -447,25 +448,27 @@ main {
 }
 .card-overlay {
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	padding: 0.8rem 1rem;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+	display: flex;
+	align-items: flex-end;
 	pointer-events: none;
+	z-index: 2;
 }
 .card-overlay .genre-tag {
-	position: absolute;
-	bottom: 60px;
-	left: 12px;
 	font-size: 0.72rem;
 	font-weight: 700;
 	color: var(--fire-yellow);
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.65);
 	padding: 0.25rem 0.7rem;
 	border-radius: 100px;
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
 	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 176, 32, 0.25);
 }
 .card-footer {
 	display: flex;
