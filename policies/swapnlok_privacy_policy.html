@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Privacy Policy — Swapnlok by GreenLeafTech</title>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Mukta:wght@400;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:      #1B7A4A;
+  --green-dark: #145c38;
+  --green-light:#e8f5ee;
+  --green-mid:  #2d9e62;
+  --ink:        #1a1a1a;
+  --ink-soft:   #3d3d3d;
+  --muted:      #6b6b6b;
+  --rule:       #d4d4d4;
+  --bg:         #fafaf8;
+  --card:       #ffffff;
+  --warn-bg:    #fff8f0;
+  --warn-border:#c0392b;
+  --note-bg:    #f0f7f4;
+  --radius:     6px;
+  --shadow:     0 2px 12px rgba(0,0,0,0.07);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Source Serif 4', 'Mukta', Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+/* ── Layout ── */
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--rule);
+  position: sticky; top: 0; z-index: 100;
+  padding: 0 2rem;
+}
+.site-header-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-name { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--green); font-size: 1.15rem; }
+.brand-dot { color: var(--rule); font-size: 0.8rem; }
+.brand-doc { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+.header-date { font-size: 0.78rem; color: var(--muted); }
+
+.layout {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 260px 1fr;
+  gap: 3rem; padding: 3rem 2rem;
+}
+
+/* ── Sidebar TOC ── */
+.toc-sidebar {
+  position: sticky; top: 80px; align-self: start;
+  max-height: calc(100vh - 100px); overflow-y: auto;
+}
+.toc-sidebar::-webkit-scrollbar { width: 4px; }
+.toc-sidebar::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 2px; }
+
+.toc-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 1rem;
+  padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule);
+}
+.toc-list { list-style: none; }
+.toc-list li { margin: 0; }
+.toc-list a {
+  display: block; padding: 0.35rem 0.75rem;
+  font-size: 0.8rem; color: var(--ink-soft);
+  text-decoration: none; border-left: 2px solid transparent;
+  transition: all 0.2s; line-height: 1.4;
+  font-family: 'Source Serif 4', serif;
+}
+.toc-list a:hover, .toc-list a.active {
+  color: var(--green);
+  border-left-color: var(--green);
+  background: var(--green-light);
+}
+
+/* ── Cover Hero ── */
+.doc-hero {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, var(--green-mid) 100%);
+  border-radius: 12px; padding: 3rem 3.5rem;
+  margin-bottom: 3rem; color: white; position: relative; overflow: hidden;
+}
+.doc-hero::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.doc-hero::after {
+  content: '';
+  position: absolute; bottom: -60px; left: 60px;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+.hero-company {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.85rem; letter-spacing: 0.15em;
+  text-transform: uppercase; opacity: 0.75; margin-bottom: 0.5rem;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem; font-weight: 700;
+  line-height: 1.2; margin-bottom: 1.5rem;
+}
+.hero-meta {
+  display: flex; gap: 2rem; flex-wrap: wrap;
+}
+.hero-meta-item {
+  font-size: 0.82rem; opacity: 0.8;
+}
+.hero-meta-item strong { opacity: 1; font-weight: 600; display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
+
+/* ── Content ── */
+.doc-content { min-width: 0; }
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem; font-weight: 700;
+  color: var(--green); margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-light);
+  scroll-margin-top: 80px;
+}
+.section-number { color: var(--green-mid); margin-right: 0.3rem; }
+
+.section-heading:first-child { margin-top: 0; }
+
+.subsection-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--ink); margin: 1.5rem 0 0.5rem;
+}
+
+.policy-text {
+  font-size: 0.95rem; color: var(--ink-soft);
+  margin-bottom: 0.9rem; text-align: justify;
+  line-height: 1.8;
+}
+
+.policy-list {
+  margin: 0.5rem 0 1rem 0; padding-left: 0; list-style: none;
+}
+.policy-list li {
+  font-size: 0.92rem; color: var(--ink-soft);
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative; line-height: 1.7;
+  border-bottom: 1px solid var(--green-light);
+}
+.policy-list li:last-child { border-bottom: none; }
+.policy-list li::before {
+  content: ''; position: absolute; left: 0; top: 0.85rem;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+}
+
+.note-box {
+  background: var(--note-bg);
+  border-left: 4px solid var(--green);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.note-box p { font-size: 0.88rem; color: var(--ink-soft); font-style: italic; line-height: 1.7; margin: 0; }
+
+.warning-box {
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem; margin: 1.25rem 0;
+}
+.warning-box p { font-size: 0.88rem; color: #7a1f1f; line-height: 1.7; margin: 0; font-weight: 500; }
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--ink); color: rgba(255,255,255,0.5);
+  text-align: center; padding: 2rem; font-size: 0.8rem;
+  margin-top: 4rem;
+}
+.site-footer a { color: var(--green-mid); text-decoration: none; }
+.site-footer strong { color: rgba(255,255,255,0.8); }
+
+/* ── Back to top ── */
+.back-top {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: var(--green); color: white;
+  width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(27,122,74,0.35);
+  opacity: 0; transition: opacity 0.3s;
+}
+.back-top.visible { opacity: 1; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .toc-sidebar { display: none; }
+  .doc-hero { padding: 2rem; }
+  .hero-title { font-size: 1.8rem; }
+}
+strong, code { overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .header-date, .brand-dot { display: none; }
+  .brand-doc { white-space: nowrap; font-size: .75rem; }
+  .doc-hero { padding: 1.5rem; }
+}
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="#" class="brand">
+      <span class="brand-name">GreenLeafTech</span>
+      <span class="brand-dot">&#9679;</span>
+      <span class="brand-doc">Swapnlok &rsaquo; Privacy Policy</span>
+    </a>
+    <span class="header-date">Effective November 21, 2026</span>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc-sidebar">
+    <div class="toc-label">Contents</div>
+    <ul class="toc-list">
+<li><a href="#hindi-summary">सारांश (हिंदी)</a></li>
+<li><a href="#1-introduction-and-scope">1. Introduction and Scope</a></li>
+<li><a href="#2-about-greenleaftech-and-swapnlok">2. About GreenLeafTech and Swapnlok</a></li>
+<li><a href="#3-information-we-collect">3. Information We Collect</a></li>
+<li><a href="#4-how-we-use-information">4. How We Use Information</a></li>
+<li><a href="#5-voice-search-and-microphone">5. Voice Search and Microphone</a></li>
+<li><a href="#6-notifications">6. Notifications</a></li>
+<li><a href="#7-advertising">7. Advertising</a></li>
+<li><a href="#8-sharing-and-links">8. Sharing and External Links</a></li>
+<li><a href="#9-panchang-and-location">9. Panchang and Location</a></li>
+<li><a href="#10-content-disclaimer">10. Content Disclaimer</a></li>
+<li><a href="#11-legal-basis-gdpr">11. Legal Basis for Processing (GDPR)</a></li>
+<li><a href="#12-data-retention-and-deletion">12. Data Retention and Deletion</a></li>
+<li><a href="#13-third-party-services">13. Third-Party Services</a></li>
+<li><a href="#14-cookies-and-similar-technologies">14. Cookies and Similar Technologies</a></li>
+<li><a href="#15-data-security">15. Data Security</a></li>
+<li><a href="#16-your-rights">16. Your Rights</a></li>
+<li><a href="#17-childrens-privacy">17. Children's Privacy</a></li>
+<li><a href="#18-international-data-transfers">18. International Data Transfers</a></li>
+<li><a href="#19-limitation-of-liability">19. Limitation of Liability</a></li>
+<li><a href="#20-changes-to-this-policy">20. Changes to This Policy</a></li>
+<li><a href="#21-governing-law">21. Governing Law</a></li>
+<li><a href="#22-contact-information">22. Contact Information</a></li>
+    </ul>
+  </aside>
+
+  <main class="doc-content">
+
+    <div class="doc-hero">
+      <div class="hero-company">GreenLeafTech &mdash; Swapnlok (स्वप्नलोक)</div>
+      <h1 class="hero-title">Privacy Policy</h1>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><strong>Effective</strong>November 21, 2026</div>
+        <div class="hero-meta-item"><strong>Last Updated</strong>November 21, 2026</div>
+        <div class="hero-meta-item"><strong>Version</strong>1.0</div>
+      </div>
+    </div>
+
+<h2 id="hindi-summary" class="section-heading">सारांश (हिंदी में)</h2>
+<p class="policy-text">यह सारांश आपकी सुविधा के लिए है। पूरी नीति नीचे अंग्रेज़ी में दी गई है, और किसी भी अंतर की स्थिति में अंग्रेज़ी संस्करण मान्य होगा।</p>
+<ul class="policy-list">
+<li><strong>कोई खाता नहीं:</strong> स्वप्नलोक में न लॉग-इन है, न ईमेल, न नाम। हम आपसे कोई व्यक्तिगत जानकारी नहीं माँगते।</li>
+<li><strong>आपका डेटा आपके फ़ोन पर:</strong> पसंदीदा स्वप्न, इतिहास, हाल की खोजें, सेटिंग्स और आज के अनुमान की लड़ी (streak) केवल आपके फ़ोन में रहती हैं। ये हमारे पास नहीं आतीं।</li>
+<li><strong>"पूरा सपना लिखें" का लिखा हुआ कहीं सहेजा नहीं जाता।</strong></li>
+<li><strong>बोलकर खोज (माइक):</strong> माइक केवल तभी चालू होता है जब आप 🎤 दबाते हैं। आपकी आवाज़ को आपके फ़ोन की वाक्-पहचान सेवा (प्रायः Google) शब्दों में बदलती है। स्वप्नलोक कोई ऑडियो रिकॉर्ड या सहेजता नहीं।</li>
+<li><strong>सूचना (नोटिफ़िकेशन):</strong> रोज़ का "आज का स्वप्न" अनुस्मारक आपके फ़ोन पर ही बनता है; किसी सर्वर से नहीं आता। आप इसे सेटिंग्स में बंद कर सकते हैं।</li>
+<li><strong>विज्ञापन:</strong> ऐप मुफ़्त है और Google AdMob के विज्ञापन दिखाता है। Google विज्ञापन के लिए IP पता, विज्ञापन ID, ऐप-उपयोग और डिवाइस की तकनीकी जानकारी एकत्र कर सकता है। ऐप इंस्टॉल करने के बाद पहले 48 घंटे कोई विज्ञापन नहीं, और मृत्यु या चोट से जुड़े स्वप्नों के पास कभी विज्ञापन नहीं।</li>
+<li><strong>स्थान (location):</strong> हम आपके फ़ोन का स्थान नहीं लेते। तिथि-पंचांग एक निश्चित स्थान (नागपुर) के आधार पर फ़ोन पर ही गणना किया जाता है।</li>
+<li><strong>डेटा हटाना:</strong> सहेजे गए → इतिहास में "इतिहास मिटाएँ" दबाएँ, या ऐप का डेटा साफ़ करें / ऐप हटाएँ — सब कुछ मिट जाता है।</li>
+<li><strong>अस्वीकरण:</strong> स्वप्नों के अर्थ पारंपरिक ग्रंथ "स्वप्न विचार" पर आधारित हैं। ये भविष्यवाणी, चिकित्सा या मनोवैज्ञानिक सलाह नहीं हैं।</li>
+<li><strong>संपर्क / शिकायत अधिकारी:</strong> विनेश कुमार, GreenLeafTech — greenleaftech.co.in@gmail.com</li>
+</ul>
+
+<h2 id="1-introduction-and-scope" class="section-heading"><span class="section-number">1.</span> Introduction and Scope</h2>
+<p class="policy-text">This Privacy Policy ("Policy") governs the collection, use, storage, sharing, and protection of personal data by GreenLeafTech ("we", "us", "our", "Developer") in connection with the Swapnlok (स्वप्नलोक) mobile application ("App", "Swapnlok") available on the Google Play Store.</p>
+<p class="policy-text">By downloading, installing, accessing, or using Swapnlok, you ("User", "you") acknowledge that you have read and understood this Policy. If you do not agree to this Policy, please discontinue use of the App and uninstall it from your device.</p>
+<p class="policy-text">This Policy applies worldwide to all users of Swapnlok regardless of their country of residence. Where local laws impose stricter requirements than this Policy, we endeavour to meet those stricter requirements to the extent applicable.</p>
+<div class="note-box"><p>This Policy is designed to align with applicable data protection and privacy laws including the Google Play Developer Program Policy, India's Digital Personal Data Protection Act 2023 (DPDP Act), the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), and the Children's Online Privacy Protection Act (COPPA), where applicable to GreenLeafTech's operations.</p></div>
+
+<h2 id="2-about-greenleaftech-and-swapnlok" class="section-heading"><span class="section-number">2.</span> About GreenLeafTech and Swapnlok</h2>
+<p class="policy-text">GreenLeafTech is the developer of Swapnlok and is responsible for the App's data practices described in this Policy. Swapnlok is an offline Hindi dream-interpretation app. Its dream meanings are drawn from the traditional text "स्वप्न विचार" and are bundled inside the App, so the App works without an internet connection; an internet connection is used only for advertising and for links you choose to open.</p>
+<p class="policy-text">Developer Name: GreenLeafTech</p>
+<p class="policy-text">Contact Email: greenleaftech.co.in@gmail.com</p>
+<p class="policy-text">Jurisdiction: India</p>
+<p class="policy-text">Swapnlok does not have user accounts. There is no sign-up, no login, and no GreenLeafTech server that stores user data for the App.</p>
+
+<h2 id="3-information-we-collect" class="section-heading"><span class="section-number">3.</span> Information We Collect</h2>
+<p class="policy-text">We follow a data minimisation principle. GreenLeafTech itself does not collect personal data through Swapnlok: everything the App remembers for you is stored only on your device. The only data that leaves your device is the data collected by Google's advertising SDK (Section 7) and, when you use voice search, by your device's speech recognition service (Section 5). These practices are also reflected in the Google Play Data Safety section of the Swapnlok listing. This Policy and the Data Safety section are intended to describe the same current practices; if an inconsistency is identified, GreenLeafTech will correct the relevant disclosure promptly.</p>
+<h3 class="subsection-heading">3.1 Stored Only on Your Device</h3>
+<p class="policy-text">The following is saved in the App's private storage on your device so that the App can work as you expect. It is never transmitted to GreenLeafTech or any third party:</p>
+<ul class="policy-list">
+<li>Favourite dreams (पसंदीदा) and your viewing history (इतिहास)</li>
+<li>Recent search words</li>
+<li>App settings: theme (light/dark), text size, haptic feedback, language, daily-reminder on/off and time</li>
+<li>Daily guess game data: today's guess, current and best streak, and the date of the last scratch card</li>
+<li>Small technical flags: whether introduction screens and the content disclaimer have been seen, whether voice search has been used, and the date the App was first opened (used only to keep the first 48 hours ad-free)</li>
+</ul>
+<p class="policy-text">Text you type in "पूरा सपना लिखें" (write your whole dream) is used only to find matching dream symbols on your device and is not saved anywhere.</p>
+<h3 class="subsection-heading">3.2 Collected by Google's Advertising SDK</h3>
+<p class="policy-text">Swapnlok shows ads through Google AdMob. Google's Mobile Ads SDK, integrated into the App, automatically collects and shares the following data for advertising, analytics, and fraud prevention, as described in Google's own disclosure:</p>
+<ul class="policy-list">
+<li>IP address, which may be used to estimate the general (approximate) location of the device</li>
+<li>User product interactions, such as app launches, taps, and ad views</li>
+<li>Diagnostic information, such as app and SDK performance, crash logs, and launch times</li>
+<li>Device and account identifiers, such as the Android advertising ID and app set ID</li>
+</ul>
+<p class="policy-text">This data is collected and processed by Google, not by GreenLeafTech. GreenLeafTech does not receive any of it in identifiable form; we only see aggregated reports (for example, total impressions and earnings) in the AdMob dashboard. See Section 7.</p>
+<h3 class="subsection-heading">3.3 Data We Do NOT Collect</h3>
+<ul class="policy-list">
+<li>Your name, email address, phone number, or any account information (the App has no accounts)</li>
+<li>Your precise or approximate location from the device's location services (the App requests no location permission)</li>
+<li>Your contacts, photos, files, SMS, or call logs</li>
+<li>Audio recordings of your voice (see Section 5)</li>
+<li>Payment or financial information (the App has no purchases)</li>
+<li>Biometric data of any kind</li>
+<li>The content of the dreams you write or search, on any server</li>
+</ul>
+<h3 class="subsection-heading">3.4 Android Device Permissions</h3>
+<p class="policy-text">Swapnlok requests only the permissions needed for its features. The following permissions are declared in the App's manifest, either by the App or by the libraries it uses:</p>
+<ul class="policy-list">
+<li><strong>android.permission.RECORD_AUDIO</strong> — Used only for voice search, only while you tap the microphone button. Android asks for your permission the first time; you can refuse it and still use typed search. See Section 5.</li>
+<li><strong>android.permission.POST_NOTIFICATIONS</strong> — Allows the App to show the daily "आज का स्वप्न" reminder on Android 13 and above. Android asks for your permission; you can refuse it or turn reminders off in the App's Settings.</li>
+<li><strong>android.permission.SCHEDULE_EXACT_ALARM</strong> — Lets the daily reminder arrive at the time you choose. It is used only to schedule the App's own reminder and involves no personal data.</li>
+<li><strong>android.permission.INTERNET</strong> and <strong>android.permission.ACCESS_NETWORK_STATE</strong> — Added by Google's Mobile Ads SDK to load ads and check whether a connection is available. Dream content does not need the internet.</li>
+<li><strong>com.google.android.gms.permission.AD_ID</strong> — Added by Google's Mobile Ads SDK so that ads can use the Android advertising ID. You can reset or delete this ID in your device settings (see Section 7.4).</li>
+<li><strong>android.permission.ACCESS_ADSERVICES_AD_ID</strong>, <strong>ACCESS_ADSERVICES_ATTRIBUTION</strong>, and <strong>ACCESS_ADSERVICES_TOPICS</strong> — Added by Google's Mobile Ads SDK for Android's Privacy Sandbox advertising features, where available on your device.</li>
+<li><strong>com.GreenLeafTech.swapnlok.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</strong> — Auto-generated by the Android system for internal broadcast receivers on Android 13 and above. It is not user-facing and involves no personal data.</li>
+</ul>
+<p class="policy-text">The App also declares that it may look for a speech recognition service on your device, which Android requires before voice search can use one. This is not a permission and gives no access to data.</p>
+<div class="note-box"><p>Swapnlok does not request ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, READ_CONTACTS, CAMERA, READ_SMS, RECEIVE_SMS, READ_EXTERNAL_STORAGE, or any account or biometric permission.</p></div>
+
+<h2 id="4-how-we-use-information" class="section-heading"><span class="section-number">4.</span> How We Use Information</h2>
+<ul class="policy-list">
+<li>To show dream meanings, search results, favourites, and history on your device</li>
+<li>To remember your settings and your daily guess streak</li>
+<li>To turn your spoken words into a search, when you use voice search</li>
+<li>To show the daily reminder you have chosen</li>
+<li>To show ads, which keep the App free, through Google AdMob</li>
+<li>To comply with applicable legal obligations</li>
+</ul>
+<p class="policy-text">GreenLeafTech does not sell personal data, does not build user profiles, and does not use the content of your dreams or searches for advertising or any other purpose.</p>
+
+<h2 id="5-voice-search-and-microphone" class="section-heading"><span class="section-number">5.</span> Voice Search and Microphone</h2>
+<ul class="policy-list">
+<li>Voice search is optional. The microphone is active only after you tap the 🎤 button, and listening stops automatically after a few seconds of silence or when you tap again.</li>
+<li>Swapnlok uses your device's built-in speech recognition service (on most Android phones this is provided by Google). That service converts your speech to text. Depending on your device and its settings, your speech may be processed on the device or sent to the provider's servers, under that provider's own privacy policy.</li>
+<li>Swapnlok receives only the recognised text, which is placed in the search box like typed text. The App does not record, store, or transmit any audio.</li>
+<li>Like a typed search, a search you make by voice may be saved in your recent searches on your device.</li>
+<li>If Hindi speech recognition is not available on your device, the App remembers that on your device for a few days so that it does not ask again unnecessarily.</li>
+</ul>
+
+<h2 id="6-notifications" class="section-heading"><span class="section-number">6.</span> Notifications</h2>
+<p class="policy-text">If you allow notifications, Swapnlok can show one daily reminder inviting you to guess whether today's dream is शुभ or अशुभ. The reminder is created and scheduled entirely on your device; no server sends it and no data is transmitted to send it. Once you make today's guess, today's reminder is removed. You can turn reminders off or change their time in the App's Settings, or block notifications in your device settings.</p>
+
+<h2 id="7-advertising" class="section-heading"><span class="section-number">7.</span> Advertising</h2>
+<h3 class="subsection-heading">7.1 Ads Provider</h3>
+<p class="policy-text">Swapnlok is free and is supported by ads served by Google AdMob (Google LLC). The data Google's SDK collects is listed in Section 3.2. Google's use of this data is governed by Google's Privacy Policy (https://policies.google.com/privacy) and is explained at https://policies.google.com/technologies/partner-sites. GreenLeafTech may in future use additional advertising partners through mediation; if so, this Policy will be updated before they are enabled.</p>
+<h3 class="subsection-heading">7.2 How Ads Appear in Swapnlok</h3>
+<ul class="policy-list">
+<li>No ads are shown during the first 48 hours after the App is first opened.</li>
+<li>No ads appear on the home screen, the star-map screen, settings, or about screens.</li>
+<li>No ads are shown beside dream meanings related to death, funerals, or injury.</li>
+<li>Some ad spaces may show a promotion for GreenLeafTech's own apps or website when no Google ad is available. These promotions are part of the App, contain no tracking, and only open the Google Play Store or our website if you tap them.</li>
+</ul>
+<h3 class="subsection-heading">7.3 Consent (EEA, UK and Switzerland)</h3>
+<p class="policy-text">If you are in the European Economic Area, the United Kingdom, or Switzerland, the App shows Google's consent form before ads are requested, and ads are personalised only with your consent. Where the App offers it, you can change your choice later from the privacy options in the App's Settings.</p>
+<h3 class="subsection-heading">7.4 Your Advertising Controls</h3>
+<ul class="policy-list">
+<li>You can reset or delete your advertising ID, or opt out of personalised ads, in your device settings (on most devices: Settings → Google → Ads, or Settings → Privacy → Ads).</li>
+<li>You can learn more about and control Google's ad personalisation at https://adssettings.google.com.</li>
+</ul>
+
+<h2 id="8-sharing-and-links" class="section-heading"><span class="section-number">8.</span> Sharing and External Links</h2>
+<ul class="policy-list">
+<li>The "चित्र बनाकर भेजें" (share as image) feature creates an image of a dream meaning on your device and opens Android's share menu. The image goes only to the app or person you choose. GreenLeafTech does not receive it.</li>
+<li>Links in the App (for example, to the Google Play Store or GreenLeafTech's website) open in other apps. Their privacy practices are governed by their own policies.</li>
+</ul>
+
+<h2 id="9-panchang-and-location" class="section-heading"><span class="section-number">9.</span> Panchang and Location</h2>
+<p class="policy-text">Swapnlok shows the current tithi, paksha, and the moon's appearance. These are calculated on your device from the current date and time using astronomical formulas and a fixed reference place (Nagpur, India). The App does not access your device's location to do this.</p>
+<p class="policy-text">As noted in Section 3.2, Google's advertising SDK may estimate your general location from your IP address for advertising and fraud prevention. Such processing is governed by Google's privacy policy.</p>
+
+<h2 id="10-content-disclaimer" class="section-heading"><span class="section-number">10.</span> Content Disclaimer</h2>
+<p class="policy-text">Dream meanings in Swapnlok are traditional interpretations taken from the classical text "स्वप्न विचार" and related traditional sources, presented for cultural, religious, and entertainment interest. They are not predictions of the future and are not medical, psychological, legal, or financial advice. Some traditional readings refer to illness, death, or a time period; these are shown as statements of the traditional text, with remedies (उपाय) from the same text, and should not be read as a forecast about you or anyone else. If a dream or its meaning causes you distress, please speak to someone you trust or a qualified professional.</p>
+
+<h2 id="11-legal-basis-gdpr" class="section-heading"><span class="section-number">11.</span> Legal Basis for Processing (GDPR)</h2>
+<p class="policy-text">Where the GDPR or equivalent legislation applies:</p>
+<ul class="policy-list">
+<li>Data stored only on your device (Section 3.1) is not processed by GreenLeafTech.</li>
+<li>Advertising data is processed by Google on the basis of your consent where required (Article 6(1)(a)), collected through Google's consent form, and otherwise on the basis of legitimate interests in funding a free app and preventing ad fraud (Article 6(1)(f)).</li>
+<li>Processing necessary to comply with legal obligations is based on Article 6(1)(c).</li>
+</ul>
+
+<h2 id="12-data-retention-and-deletion" class="section-heading"><span class="section-number">12.</span> Data Retention and Deletion</h2>
+<ul class="policy-list">
+<li>Data stored on your device is kept until you delete it or uninstall the App. Recent searches and history are limited to a small number of recent items.</li>
+<li>You can clear your viewing history from Saved → इतिहास → "इतिहास मिटाएँ", and remove a favourite by tapping its heart again.</li>
+<li>To delete everything the App stores, use your device's Settings → Apps → Swapnlok → Storage → Clear data, or uninstall the App. This cannot be undone, and GreenLeafTech cannot recover it.</li>
+<li>Because GreenLeafTech does not hold your data on any server, there is no account to delete. Data collected by Google for advertising is retained according to Google's policies; see Section 7.4 for your controls.</li>
+</ul>
+
+<h2 id="13-third-party-services" class="section-heading"><span class="section-number">13.</span> Third-Party Services</h2>
+<p class="policy-text">GreenLeafTech does not sell, rent, or trade personal data. GreenLeafTech does not sell personal information as defined under the CCPA/CPRA. The App relies on the following third-party services:</p>
+<ul class="policy-list">
+<li><strong>Google AdMob / Google Mobile Ads SDK and User Messaging Platform (Google LLC)</strong> — ads and, where required, the consent form. Privacy Policy: https://policies.google.com/privacy</li>
+<li><strong>Your device's speech recognition service</strong> (usually provided by Google) — converts speech to text when you use voice search, under its provider's privacy policy.</li>
+<li><strong>Google Play</strong> (Google LLC) — distributes the App and its updates.</li>
+</ul>
+
+<h2 id="14-cookies-and-similar-technologies" class="section-heading"><span class="section-number">14.</span> Cookies and Similar Technologies</h2>
+<p class="policy-text">Swapnlok is a mobile app and does not use browser cookies itself. Google's advertising SDK may use device identifiers and similar technologies described in Section 3.2, under Google's privacy policy.</p>
+
+<h2 id="15-data-security" class="section-heading"><span class="section-number">15.</span> Data Security</h2>
+<p class="policy-text">Data the App stores on your device is kept in the App's private storage, protected by Android's application sandbox, and is not accessible to other apps. Data collected by Google's advertising SDK is encrypted in transit using TLS, according to Google. No method of storage or transmission is completely secure, and GreenLeafTech cannot guarantee absolute security. GreenLeafTech follows a policy of not disclosing its internal technical implementation details.</p>
+
+<h2 id="16-your-rights" class="section-heading"><span class="section-number">16.</span> Your Rights</h2>
+<p class="policy-text">Depending on where you live, you may have rights such as access, correction, erasure, restriction, portability, objection, and withdrawal of consent (GDPR); the rights to know, delete, correct, and opt out of sale or sharing, and to non-discrimination (CCPA/CPRA); and the rights to information, correction and erasure, grievance redressal, and nomination (India's DPDP Act).</p>
+<ul class="policy-list">
+<li>Most of these rights are in your own hands: the App's data lives only on your device and can be viewed and erased as described in Section 12.</li>
+<li>For advertising data, you can use the controls in Section 7.4 or contact Google.</li>
+<li>For any other request or question, contact us at greenleaftech.co.in@gmail.com. We aim to respond within 30 days.</li>
+</ul>
+
+<h2 id="17-childrens-privacy" class="section-heading"><span class="section-number">17.</span> Children's Privacy</h2>
+<p class="policy-text">Swapnlok is not directed to children. It contains traditional dream interpretations that may mention adult themes, illness, and death. Users must be at least 13 years old, or the minimum age required in their jurisdiction (including under India's DPDP Act), whichever is higher. GreenLeafTech does not knowingly collect personal data from children; the App itself collects no personal data, and ads are served by Google under its policies. If you believe a child is using the App inappropriately, please contact us at greenleaftech.co.in@gmail.com.</p>
+
+<h2 id="18-international-data-transfers" class="section-heading"><span class="section-number">18.</span> International Data Transfers</h2>
+<p class="policy-text">GreenLeafTech is based in India. Data collected by Google's advertising SDK, and speech processed by your device's speech recognition provider, may be processed on servers outside your country, including in the United States, under the transfer safeguards those providers make available and as required by applicable law.</p>
+
+<h2 id="19-limitation-of-liability" class="section-heading"><span class="section-number">19.</span> Limitation of Liability</h2>
+<p class="policy-text">To the fullest extent permitted by applicable law, GreenLeafTech shall not be liable for loss of data stored on your device (for example, after uninstalling, clearing data, or device failure), for decisions taken on the basis of the App's traditional content, or for the acts or omissions of third-party services such as Google. Nothing in this section excludes liability that cannot be excluded under applicable law.</p>
+
+<h2 id="20-changes-to-this-policy" class="section-heading"><span class="section-number">20.</span> Changes to This Policy</h2>
+<p class="policy-text">We may update this Policy from time to time. Changes take effect when the updated Policy is posted at the URL given in the App's Google Play listing. We will give notice of material changes, such as a new advertising partner or any new data collection, in the App or by other reasonable means before they take effect. The date of the latest update is shown at the top of this page.</p>
+<div class="note-box"><p><strong>Version 1.0 (November 21, 2026):</strong> First version of the Swapnlok Privacy Policy.</p></div>
+
+<h2 id="21-governing-law" class="section-heading"><span class="section-number">21.</span> Governing Law</h2>
+<p class="policy-text">This Privacy Policy shall be governed by the laws of India, without regard to its conflict of law provisions. Any dispute arising out of or in connection with this Policy shall be subject to the exclusive jurisdiction of the competent courts located in New Delhi, India.</p>
+<p class="policy-text">The Hindi summary at the top of this Policy is provided for convenience. In the event of any conflict, the English version shall prevail.</p>
+
+<h2 id="22-contact-information" class="section-heading"><span class="section-number">22.</span> Contact Information</h2>
+<p class="policy-text">If you have any questions, concerns, complaints, or requests about this Policy or our data practices, please contact us:</p>
+<p class="policy-text">Developer: GreenLeafTech</p>
+<p class="policy-text">Email: greenleaftech.co.in@gmail.com</p>
+<p class="policy-text">Grievance Officer (India DPDP Act): Vinesh Kumar, GreenLeafTech — greenleaftech.co.in@gmail.com. We aim to respond to all privacy-related enquiries within 30 days.</p>
+<p class="policy-text">Swapnlok — traditional Hindi dream meanings, offline.</p>
+<p class="policy-text">Copyright 2026 GreenLeafTech. All rights reserved.</p>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Swapnlok (स्वप्नलोक)</strong> &mdash; traditional Hindi dream meanings, offline.</p>
+  <p style="margin-top:0.5rem">&copy; 2026 GreenLeafTech. All rights reserved. &nbsp;|&nbsp; <a href="mailto:greenleaftech.co.in@gmail.com">greenleaftech.co.in@gmail.com</a></p>
+</footer>
+
+<a href="#" class="back-top" title="Back to top">&#8593;</a>
+
+<script>
+const sections = document.querySelectorAll('.section-heading');
+const tocLinks = document.querySelectorAll('.toc-list a');
+const backTop = document.querySelector('.back-top');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+      if (active) {
+        active.classList.add('active');
+        active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }
+  });
+}, { rootMargin: '-15% 0px -70% 0px' });
+sections.forEach(s => observer.observe(s));
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 400);
+});
+</script>
+</body>
+</html>
